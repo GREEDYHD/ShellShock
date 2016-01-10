@@ -183,8 +183,9 @@ GameObject:
   - 50: {fileID: 1399333298}
   - 114: {fileID: 1399333297}
   - 61: {fileID: 1399333301}
+  - 114: {fileID: 1399333302}
   m_Layer: 0
-  m_Name: PLACEHOLDER_PlayerSprite
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -268,3 +269,15 @@ BoxCollider2D:
   m_Offset: {x: 0, y: .100000001}
   serializedVersion: 2
   m_Size: {x: 1, y: .200000003}
+--- !u!114 &1399333302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1399333296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd093cc424c8bc448a0687c4c9c016e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 104962, guid: dea1b2a0b5b8d2c46adb881aa59fc2a9, type: 2}
