@@ -26,5 +26,7 @@ public class Movement : MonoBehaviour
 		if (Input.GetKey (KeyCode.D)) {
 			mRigidBody2D.AddForce (new Vector2 (mMovementSpeed, 0));
 		}
+
+		mRigidBody2D.AddForce (mMovementSpeed * new Vector2 (Input.GetAxisRaw ("LJoystickX"), Input.GetAxisRaw ("LJoystickY")));
 	}
 }
