@@ -44,3 +44,15 @@ TagManager:
   - name: Bullets
     uniqueID: 1815288447
     locked: 0
+  - name: WallBEHIND
+    uniqueID: 4240253573
+    locked: 0
+  - name: WallINFRONT
+    uniqueID: 4291136391
+    locked: 0
+  - name: Player
+    uniqueID: 816084069
+    locked: 0
+  - name: Reticle
+    uniqueID: 3983089427
+    locked: 0
