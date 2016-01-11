@@ -21,8 +21,8 @@ public class Aiming : MonoBehaviour {
 		gameObject.transform.localPosition = newPos;
 
 		//Creates a Square clamp range
-		newPos.x = Mathf.Clamp(newPos.x, -Range, Range);
-		newPos.y = Mathf.Clamp(newPos.y, -Range, Range);
+		//newPos.x = Mathf.Clamp(newPos.x, -Range, Range);
+		//newPos.y = Mathf.Clamp(newPos.y, -Range, Range);
 
 		//Creates a circle clamp range
 		transform.position = Vector3.ClampMagnitude(new Vector3(defaultPos.x + newPos.x, defaultPos.y + newPos.y, defaultPos.y + newPos.y), Range);

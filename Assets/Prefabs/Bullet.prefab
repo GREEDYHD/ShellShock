@@ -11,7 +11,8 @@ GameObject:
   - 212: {fileID: 21228528}
   - 114: {fileID: 11450162}
   - 50: {fileID: 5085068}
-  m_Layer: 0
+  - 61: {fileID: 6114004}
+  m_Layer: 8
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,6 +46,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &6114004
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104962}
+  m_Enabled: 1
+  m_Material: {fileID: 6200000, guid: 0054eb651fd8e6a4c85bb90a9b45f61b, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .159999996, y: .159999996}
 --- !u!114 &11450162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -56,6 +70,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5623fb6d422dc7e4c980f9721531f366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bouncesAllowed: 3
+  currentBounces: 0
 --- !u!212 &21228528
 SpriteRenderer:
   m_ObjectHideFlags: 1
