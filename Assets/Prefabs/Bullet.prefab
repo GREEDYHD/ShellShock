@@ -72,6 +72,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bouncesAllowed: 3
   currentBounces: 0
+  mReticle: {fileID: 0}
+  mPlayer: {fileID: 0}
 --- !u!212 &21228528
 SpriteRenderer:
   m_ObjectHideFlags: 1

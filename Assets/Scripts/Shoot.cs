@@ -12,9 +12,9 @@ public class Shoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButton("Fire1")) 
+		if (Mathf.RoundToInt(Input.GetAxisRaw("Fire1")) > 0.5) 
 		{
-			Instantiate(bullet, new Vector3(0,0,0), Quaternion.identity);
+			Instantiate(bullet, this.GetComponentInParent<Transform>().position, Quaternion.identity);
 		}
 	}
 }
