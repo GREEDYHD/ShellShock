@@ -12,7 +12,8 @@ public class Shoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode.A)) {
+		if (Input.GetButton("Fire1")) 
+		{
 			Instantiate(bullet, new Vector3(0,0,0), Quaternion.identity);
 		}
 	}

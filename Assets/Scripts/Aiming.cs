@@ -15,8 +15,8 @@ public class Aiming : MonoBehaviour {
 	
 	void Update() {
 		//Get RIGHT STICK control inputs
-		newPos.x += Input.GetAxis("JoystickX") * Speed * Time.deltaTime;
-		newPos.y += Input.GetAxis("JoystickY") * Speed * Time.deltaTime;
+		newPos.x += Input.GetAxis("RJoystickX") * Speed * Time.deltaTime;
+		newPos.y += Input.GetAxis("RJoystickY") * Speed * Time.deltaTime;
 
 		gameObject.transform.localPosition = newPos;
 
