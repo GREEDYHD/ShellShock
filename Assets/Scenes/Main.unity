@@ -171,6 +171,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1 &868394532 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 106500, guid: 03770e410261d274a89c76e1c0deb063, type: 2}
+  m_PrefabInternal: {fileID: 1484962086}
+--- !u!114 &868394539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 868394532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3800ba1d4402403408247b3365ec08f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mEquippedWeapon: {fileID: 2046131665}
 --- !u!1001 &1484962086
 Prefab:
   m_ObjectHideFlags: 0
@@ -210,6 +226,50 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11478112, guid: 03770e410261d274a89c76e1c0deb063, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03770e410261d274a89c76e1c0deb063, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2046131664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2046131666}
+  - 114: {fileID: 2046131665}
+  m_Layer: 0
+  m_Name: Pistol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2046131665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2046131664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ecd6a541894464d8a1b8dc1d6ef09b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mProjectile: {fileID: 104962, guid: dea1b2a0b5b8d2c46adb881aa59fc2a9, type: 2}
+--- !u!4 &2046131666
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2046131664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .879999995, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
