@@ -2,8 +2,10 @@
 using System.Collections;
 
 public class Proj : MonoBehaviour {
+	
+	public float bouncesAllowed;
+	public float currentBounces;
 
-	float t;
 	// Use this for initalization
 	void Awake() 
 	{
@@ -11,10 +13,16 @@ public class Proj : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update() {
-		t += Time.deltaTime;
-		if (t >= 0.5) {
-			Destroy(this.gameObject);
+	void Update() 
+	{
+		if (currentBounces > bouncesAllowed) 
+		{
+			Destroy(gameObject);
 		}
+	}
+
+	void OnCollisionEnter2D (Collision2D bulletCollider)
+	{
+		currentBounces++;
 	}
 }
