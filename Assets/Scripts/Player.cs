@@ -5,11 +5,6 @@ public class Player : MonoBehaviour
 {
 	public Weapon mEquippedWeapon;
 	
-	void Start ()
-	{
-		mEquippedWeapon.transform.parent = transform;
-	}
-	
 	int mPlayerNumber;
 	int mHealth;
 	int mMaxHealth;
@@ -18,10 +13,25 @@ public class Player : MonoBehaviour
 	
 	float mMaxSheildTime;
 	float mRemainingSheidTime;
+	Vector2 mReticlePosition;
+
+	public Vector2 ReticlePosition {
+		get {
+			return mReticlePosition;
+		}
+	}
+
+	void Start ()
+	{
+		mEquippedWeapon.transform.parent = transform;
+		mReticlePosition = mEquippedWeapon.transform.position;
+	}
 	
 	void Update ()
 	{
 		if (mEquippedWeapon) {
+			mEquippedWeapon.ShootDirection = GetComponent<Aiming> ().AimDirection;
+
 			if (Input.GetButtonUp ("Fire1")) {
 				mEquippedWeapon.IsShooting = false;
 			}

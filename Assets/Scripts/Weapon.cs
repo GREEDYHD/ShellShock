@@ -13,6 +13,17 @@ public class Weapon : MonoBehaviour
 	protected float mRange = 10f;
 	protected float mMuzzleVelocity = 20f;
 	protected float mCurrentFireTime = 0f;
+	protected Vector2 mShootDirection = new Vector2 (0, 0);
+
+	public Vector2 ShootDirection {
+		get {
+			return mShootDirection;
+		}
+		set {
+			mShootDirection = value;
+		}
+	}
+
 	public GameObject mProjectile;
 	
 	bool isShooting;
@@ -29,13 +40,10 @@ public class Weapon : MonoBehaviour
 	
 	void Shoot ()
 	{
-		//      dir.x += Mathf.Sin(Random.value - 0.5f) * mSpreadAngle;
-		//      dir.y += Mathf.Cos(Random.value - 0.5f) * mSpreadAngle;
-		
-		Vector3 spr = new Vector3 (Random.value - 0.5f, Random.value - 0.5f, 0) * mSpread; //Represents bullet spread at maximum range
+		Vector2 spr = new Vector2 (Random.value - 0.5f, Random.value - 0.5f) * mSpread; //Represents bullet spread at maximum range
 		if (mCurrentFireTime > 1 / mFireRate) {
 			GameObject firedProjectile = (GameObject)Instantiate (mProjectile, transform.position, Quaternion.identity);
-			firedProjectile.GetComponent<Projectile> ().Fire ((transform.up * mMuzzleVelocity) + spr);
+			firedProjectile.GetComponent<Projectile> ().Fire ((mShootDirection * mMuzzleVelocity) + spr);
 			mCurrentFireTime = 0;
 		} else {
 			mCurrentFireTime += Time.deltaTime;
