@@ -32,12 +32,14 @@ public class Player : MonoBehaviour
 		if (mEquippedWeapon) {
 			mEquippedWeapon.ShootDirection = GetComponent<Aiming> ().AimDirection;
 
-			if (Input.GetButtonUp ("Fire1")) {
-				mEquippedWeapon.IsShooting = false;
-			}
-			
-			if (Input.GetButtonDown ("Fire1")) {
-				mEquippedWeapon.IsShooting = true;
+			if (GetComponent<Aiming> ().AimDirection.magnitude > 0.9) {
+				if (Input.GetButtonUp ("Fire1")) {
+					mEquippedWeapon.IsShooting = false;
+				}
+				
+				if (Input.GetButtonDown ("Fire1")) {
+					mEquippedWeapon.IsShooting = true;
+				}
 			}
 		}
 	}

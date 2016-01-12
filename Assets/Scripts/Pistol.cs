@@ -9,7 +9,6 @@ public class Pistol : Weapon
 		//mMaxTotalAmmo = 100;
 		//mRemainingAmmo = 15;
 		//mDamage = 10;
-		
 		//mReloadTime = 2f;
 		//mAccuracy = 5f;
 		//mFireRate = 0.1f;
