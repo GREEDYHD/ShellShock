@@ -19,7 +19,7 @@ public class Aiming : MonoBehaviour
 	void Update ()
 	{
 		Vector2 playerPosition = new Vector2 (transform.position.x, transform.position.y);
-		mAimDirection = new Vector2 (Input.GetAxis ("RJoystickX"), Input.GetAxis ("RJoystickY")).normalized;
+		mAimDirection = new Vector2 (Input.GetAxis ("Player_" + GetComponent<Player> ().PlayerNumber + "_RJoystickX"), Input.GetAxis ("Player_" + GetComponent<Player> ().PlayerNumber + "_RJoystickY")).normalized;
 		mReticle.transform.position = playerPosition + GetComponent<Player> ().ReticlePosition + (mAimDirection * Range);
 		Debug.DrawLine (playerPosition + GetComponent<Player> ().ReticlePosition, playerPosition + GetComponent<Player> ().ReticlePosition + mAimDirection * Range);
 	}

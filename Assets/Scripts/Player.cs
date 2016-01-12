@@ -5,7 +5,14 @@ public class Player : MonoBehaviour
 {
 	public Weapon mEquippedWeapon;
 	
-	int mPlayerNumber;
+	public int mPlayerNumber = 0;
+
+	public int PlayerNumber {
+		get {
+			return mPlayerNumber;
+		}
+	}
+
 	int mHealth;
 	int mMaxHealth;
 	
@@ -33,12 +40,10 @@ public class Player : MonoBehaviour
 			mEquippedWeapon.ShootDirection = GetComponent<Aiming> ().AimDirection;
 
 			if (GetComponent<Aiming> ().AimDirection.magnitude > 0.9) {
-				if (Input.GetButtonUp ("Fire1")) {
-					mEquippedWeapon.IsShooting = false;
-				}
-				
-				if (Input.GetButtonDown ("Fire1")) {
-					mEquippedWeapon.IsShooting = true;
+				if (Input.GetButton ("Player_" + mPlayerNumber + "_Fire1")) {
+					if (!mEquippedWeapon.Shoot ()) {
+						mEquippedWeapon = null;
+					}
 				}
 			}
 		}

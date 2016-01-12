@@ -27,6 +27,6 @@ public class Movement : MonoBehaviour
 			mRigidBody2D.AddForce (new Vector2 (mMovementSpeed, 0));
 		}
 
-		mRigidBody2D.AddForce (mMovementSpeed * new Vector2 (Input.GetAxisRaw ("LJoystickX"), Input.GetAxisRaw ("LJoystickY")));
+		mRigidBody2D.AddForce (mMovementSpeed * new Vector2 (Input.GetAxisRaw ("Player_" + GetComponent<Player> ().PlayerNumber + "_LJoystickX"), Input.GetAxisRaw ("Player_" + GetComponent<Player> ().PlayerNumber + "_LJoystickY")));
 	}
 }

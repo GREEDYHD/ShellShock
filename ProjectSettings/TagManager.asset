@@ -44,3 +44,6 @@ TagManager:
   - name: Bullets
     uniqueID: 1815288447
     locked: 0
+  - name: Reticle
+    uniqueID: 3486639111
+    locked: 0

@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Weapon : MonoBehaviour
+public abstract class Weapon : MonoBehaviour
 {
-	//protected int mDamage;
+	protected int mDamage;
 	protected float mCurrentReloadTime = 0f;
 	protected float mReloadTime = 10f;
 	protected float mSpread = 2f; //spread
@@ -12,6 +12,10 @@ public class Weapon : MonoBehaviour
 	protected float mChargeTime = 0f;
 	protected float mMuzzleVelocity = 40f;
 	protected float mCurrentFireTime = 0f;
+	protected int mAmmoRemaining = 100;
+	protected int mAmmoMax = 100;
+
+
 	protected Vector2 mShootDirection = new Vector2 (0, 0);
 
 	public Vector2 ShootDirection {
@@ -24,37 +28,23 @@ public class Weapon : MonoBehaviour
 	}
 
 	public GameObject mProjectile;
-	
-	bool isShooting;
-	
-	public bool IsShooting {
-		get {
-			return isShooting;
-		}
-		
-		set {
-			isShooting = value;
-		}
-	}
 
-	void Shoot ()
+	public bool Shoot ()
 	{
-		Vector2 spr = new Vector2 (Random.value - 0.5f, Random.value - 0.5f) * mSpread;
-		if (mCurrentFireTime > 1 / mFireRate) {
-			GameObject firedProjectile = (GameObject)Instantiate (mProjectile, transform.position, Quaternion.identity);
-			firedProjectile.GetComponent<Projectile> ().Fire ((mShootDirection * mMuzzleVelocity) + spr);
-			mCurrentFireTime = 0;
+		if (mAmmoRemaining > 0) {
+			Vector2 spr = new Vector2 (Random.value - 0.5f, Random.value - 0.5f) * mSpread;
+			if (mCurrentFireTime > 1 / mFireRate) {
+				GameObject firedProjectile = (GameObject)Instantiate (mProjectile, transform.position, Quaternion.identity);
+				firedProjectile.GetComponent<Projectile> ().Fire ((mShootDirection * mMuzzleVelocity) + spr);
+				mAmmoRemaining--;
+				mCurrentFireTime = 0;
+				return true;
+			} else {
+				mCurrentFireTime += Time.deltaTime;
+				return true;
+			}
 		} else {
-			mCurrentFireTime += Time.deltaTime;
-		}
-	}
-
-	void Update ()
-	{
-		if (IsShooting) {
-			Shoot ();
-		} else {
-			mCurrentFireTime = 0;
+			return false;
 		}
 	}
 }
