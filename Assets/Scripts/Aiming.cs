@@ -5,6 +5,7 @@ public class Aiming : MonoBehaviour
 {
 	float Range = 3f; //Range the reticle can move from the origin(player)
 	Vector2 mAimDirection;
+	public GameObject mReticle;
 
 	public Vector2 AimDirection {
 		get {
@@ -17,9 +18,9 @@ public class Aiming : MonoBehaviour
 
 	void Update ()
 	{
-		Vector2 playerPosition = new Vector2 (transform.parent.position.x, transform.parent.position.y);
+		Vector2 playerPosition = new Vector2 (transform.position.x, transform.position.y);
 		mAimDirection = new Vector2 (Input.GetAxis ("RJoystickX"), Input.GetAxis ("RJoystickY")).normalized;
-		transform.position = playerPosition + (mAimDirection * Range);
-		Debug.DrawLine (playerPosition, playerPosition + mAimDirection * Range);
+		mReticle.transform.position = playerPosition + GetComponent<Player> ().ReticlePosition + (mAimDirection * Range);
+		Debug.DrawLine (playerPosition + GetComponent<Player> ().ReticlePosition, playerPosition + GetComponent<Player> ().ReticlePosition + mAimDirection * Range);
 	}
 }

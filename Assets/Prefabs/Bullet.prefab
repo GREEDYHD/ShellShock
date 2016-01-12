@@ -9,9 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 402304}
   - 212: {fileID: 21228528}
-  - 114: {fileID: 11450162}
   - 50: {fileID: 5085068}
   - 61: {fileID: 6114004}
+  - 114: {fileID: 11424890}
   m_Layer: 8
   m_Name: Bullet
   m_TagString: Untagged
@@ -59,7 +59,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: .159999996, y: .159999996}
---- !u!114 &11450162
+--- !u!114 &11424890
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -72,8 +72,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bouncesAllowed: 3
   currentBounces: 0
-  mReticle: {fileID: 0}
-  mPlayer: {fileID: 0}
 --- !u!212 &21228528
 SpriteRenderer:
   m_ObjectHideFlags: 1
