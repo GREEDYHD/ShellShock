@@ -4,7 +4,9 @@ using System.Collections;
 public class Movement : MonoBehaviour
 {
 	public float mMovementSpeed;
+	public Sprite standingPlayer; //standard player sprites
 
+	
 	Rigidbody2D mRigidBody2D;
 
 	void Start ()
@@ -28,5 +30,11 @@ public class Movement : MonoBehaviour
 		}
 
 		mRigidBody2D.AddForce (mMovementSpeed * new Vector2 (Input.GetAxisRaw ("LJoystickX"), Input.GetAxisRaw ("LJoystickY")));
+
+
 	}
+
+
+	
+
 }

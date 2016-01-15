@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Proj : MonoBehaviour {
+public class Projectile : MonoBehaviour {
 	
 	public float bouncesAllowed;
 	public float currentBounces;
