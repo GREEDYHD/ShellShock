@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Player : MonoBehaviour
 {
 	public Weapon mEquippedWeapon;
+	public Slider slider;
 	
 	int mPlayerNumber;
 	int mHealth;
@@ -41,6 +43,14 @@ public class Player : MonoBehaviour
 					mEquippedWeapon.IsShooting = true;
 				}
 			}
+		}
+	}
+
+	void OnCollisionEnter2D(Collision2D coll)
+	{
+		if (coll.gameObject.tag == "Projectile") {
+			Debug.Log("Hit");
+			slider.value -= 0.05f; //But it will be coll.damage not 5.
 		}
 	}
 }

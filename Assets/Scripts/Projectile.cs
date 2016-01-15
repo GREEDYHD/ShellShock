@@ -27,7 +27,7 @@ public class Projectile : MonoBehaviour
 		transform.rotation = Quaternion.AngleAxis (angle - 180, Vector3.forward);
 	}
 
-	void OnCollisionEnter2D (Collision2D bulletCollider)
+	void OnCollisionEnter2D (Collision2D coll)
 	{
 		currentBounces++;
 	}
