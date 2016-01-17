@@ -16,5 +16,6 @@ public class Pistol : Weapon
 		mCurrentFireTime = 0f;
 		mAmmoRemaining = 10;
 		mAmmoMax = 10;
+
 	}
 }

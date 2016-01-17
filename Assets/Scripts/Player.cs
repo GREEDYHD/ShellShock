@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Player : MonoBehaviour
 {
 	public Weapon mEquippedWeapon;
 	
-	public int mPlayerNumber = 0;
+	public int mPlayerNumber;
 
 	public int PlayerNumber {
 		get {
@@ -13,6 +14,8 @@ public class Player : MonoBehaviour
 		}
 	}
 
+	public Slider slider;
+	
 	int mHealth;
 	int mMaxHealth;
 	
@@ -38,14 +41,22 @@ public class Player : MonoBehaviour
 	{
 		if (mEquippedWeapon) {
 			mEquippedWeapon.ShootDirection = GetComponent<Aiming> ().AimDirection;
-
 			if (GetComponent<Aiming> ().AimDirection.magnitude > 0.9) {
 				if (Input.GetButton ("Player_" + mPlayerNumber + "_Fire1")) {
 					if (!mEquippedWeapon.Shoot ()) {
+						Debug.Log ("SS");
 						mEquippedWeapon = null;
 					}
 				}
 			}
+		}
+	}
+
+	void OnCollisionEnter2D (Collision2D coll)
+	{
+		if (coll.gameObject.tag == "Projectile") {
+			Debug.Log ("Hit");
+			slider.value -= 0.05f; //But it will be coll.damage not 5.
 		}
 	}
 }
