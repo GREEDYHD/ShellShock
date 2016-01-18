@@ -359,6 +359,14 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6193772, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193772, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
   m_IsPrefabParent: 0
@@ -490,6 +498,14 @@ Prefab:
       propertyPath: m_Name
       value: DynamicWall 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6193772, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193772, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
   m_IsPrefabParent: 0
@@ -611,6 +627,14 @@ Prefab:
     - target: {fileID: 152078, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
       propertyPath: m_Name
       value: DynamicWall 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193772, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193772, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Size.x
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
@@ -749,6 +773,22 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 48301510}
   m_Script: {fileID: -113659843, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!1 &463503570 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 152078, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+  m_PrefabInternal: {fileID: 192733091}
+--- !u!114 &463503574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 463503570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81081da2824469b4f91023e3aa6e94ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallAnim: {fileID: 0}
 --- !u!1 &483896234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,6 +1609,22 @@ BoxCollider2D:
   m_Offset: {x: 2.38418579e-07, y: 0}
   serializedVersion: 2
   m_Size: {x: .625, y: 3.125}
+--- !u!1 &886171317 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 152078, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+  m_PrefabInternal: {fileID: 920651012}
+--- !u!114 &886171321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 886171317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81081da2824469b4f91023e3aa6e94ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallAnim: {fileID: 0}
 --- !u!4 &896801663 stripped
 Transform:
   m_PrefabParentObject: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
@@ -1623,6 +1679,14 @@ Prefab:
     - target: {fileID: 152078, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
       propertyPath: m_Name
       value: DynamicWall 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193772, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193772, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Size.x
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
@@ -1695,6 +1759,26 @@ BoxCollider2D:
   m_Offset: {x: 0, y: .209999993}
   serializedVersion: 2
   m_Size: {x: 3.125, y: .180000007}
+--- !u!1 &1263410897 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 152078, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+  m_PrefabInternal: {fileID: 2143236158}
+--- !u!4 &1263410898 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+  m_PrefabInternal: {fileID: 2143236158}
+--- !u!114 &1263410902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263410897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81081da2824469b4f91023e3aa6e94ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallAnim: {fileID: 0}
 --- !u!1 &1410044779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,7 +1863,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1422280810}
-  - 114: {fileID: 1422280811}
   m_Layer: 0
   m_Name: DynamicWalls
   m_TagString: Untagged
@@ -1794,31 +1877,119 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1422280809}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.81000042, y: -1.35000002, z: 0}
+  m_LocalPosition: {x: -8.81000042, y: -.370000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1896304699}
   - {fileID: 1706810626}
   - {fileID: 896801663}
   - {fileID: 1864446500}
+  - {fileID: 1521693811}
+  - {fileID: 1263410898}
   m_Father: {fileID: 0}
   m_RootOrder: 7
---- !u!114 &1422280811
+--- !u!1 &1521693810 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 152078, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+  m_PrefabInternal: {fileID: 1630016324}
+--- !u!4 &1521693811 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+  m_PrefabInternal: {fileID: 1630016324}
+--- !u!114 &1521693815
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1422280809}
+  m_GameObject: {fileID: 1521693810}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81081da2824469b4f91023e3aa6e94ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dynamicWalls: []
+  wallAnim: {fileID: 0}
+--- !u!1001 &1630016324
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1422280810}
+    m_Modifications:
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 17.3700008
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.30000019
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 152078, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Name
+      value: DynamicWall 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193772, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193772, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &1706810626 stripped
 Transform:
   m_PrefabParentObject: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
   m_PrefabInternal: {fileID: 214898107}
+--- !u!1 &1718332380 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 152078, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+  m_PrefabInternal: {fileID: 301841938}
+--- !u!114 &1718332384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1718332380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81081da2824469b4f91023e3aa6e94ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallAnim: {fileID: 0}
 --- !u!1 &1719737165
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,4 +2365,82 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e42219534159abf4caa10158b09122e6, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &2107136812 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 152078, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+  m_PrefabInternal: {fileID: 214898107}
+--- !u!114 &2107136816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2107136812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81081da2824469b4f91023e3aa6e94ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallAnim: {fileID: 0}
+--- !u!1001 &2143236158
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1422280810}
+    m_Modifications:
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 17.3700008
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.749873281
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 420104, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 152078, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Name
+      value: DynamicWall 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193772, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193772, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 49c1a170413e9dc4699c26cc780aa0e4, type: 2}
   m_IsPrefabParent: 0

@@ -2,11 +2,12 @@
 using System.Collections;
 
 public class DynamicWall : MonoBehaviour {
-	public GameObject[] dynamicWalls;
+	public Animator wallAnim;
 	// Use this for initialization
 	void Start()
 	{
-
+		wallAnim = GetComponent<Animator>();
+		wallAnim.enabled = false;
 	}
 
 	void Update()
@@ -19,9 +20,6 @@ public class DynamicWall : MonoBehaviour {
 
 	void Walls()
 	{
-		for(int i = 0; i > 4; i++)
-		{
-			Random.Range (0,dynamicWalls.Length);
-		}
+		wallAnim.enabled = true;
 	}
 }
