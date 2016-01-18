@@ -5,7 +5,7 @@ public class Pistol : Weapon
 {
 	void Start ()
 	{
-		mDamage = 10;
+		mDamage = 50;
 		mCurrentReloadTime = 0f;
 		mReloadTime = 10f;
 		mSpread = 2f; // Spread
@@ -16,6 +16,5 @@ public class Pistol : Weapon
 		mCurrentFireTime = 0f;
 		mAmmoRemaining = 10;
 		mAmmoMax = 10;
-
 	}
 }

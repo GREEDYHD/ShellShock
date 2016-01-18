@@ -44,7 +44,6 @@ public class Player : MonoBehaviour
 			if (GetComponent<Aiming> ().AimDirection.magnitude > 0.9) {
 				if (Input.GetButton ("Player_" + mPlayerNumber + "_Fire1")) {
 					if (!mEquippedWeapon.Shoot ()) {
-						Debug.Log ("SS");
 						mEquippedWeapon = null;
 					}
 				}
@@ -55,8 +54,8 @@ public class Player : MonoBehaviour
 	void OnCollisionEnter2D (Collision2D coll)
 	{
 		if (coll.gameObject.tag == "Projectile") {
-			Debug.Log ("Hit");
-			slider.value -= 0.05f; //But it will be coll.damage not 5.
+			slider.value -= (float)coll.gameObject.GetComponent<Projectile>().Damage / 100;
+			Destroy(coll.gameObject);
 		}
 	}
 }

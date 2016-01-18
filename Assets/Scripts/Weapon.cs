@@ -33,9 +33,8 @@ public abstract class Weapon : MonoBehaviour
 		if (mAmmoRemaining > 0) {
 			Vector2 spr = new Vector2 (Random.value - 0.5f, Random.value - 0.5f) * mSpread;
 			if (mCurrentFireTime > 1 / mFireRate) {
-				Debug.Log ("DSDA");
-				GameObject firedProjectile = (GameObject)Instantiate (mProjectile, transform.position, Quaternion.identity);
-				firedProjectile.GetComponent<Projectile> ().Fire ((mShootDirection * mMuzzleVelocity) + spr);
+				GameObject firedProjectile = (GameObject)Instantiate (mProjectile, new Vector2(transform.position.x,transform.position.y) + mShootDirection.normalized * 1.8f, Quaternion.identity);
+				firedProjectile.GetComponent<Projectile> ().Fire ((mShootDirection * mMuzzleVelocity) + spr, mDamage);
 				mAmmoRemaining--;
 				mCurrentFireTime = 0;
 				return true;
@@ -45,26 +44,6 @@ public abstract class Weapon : MonoBehaviour
 			}
 		} else {
 			return false;
-		}
-	}
-	
-	bool isShooting;
-
-	public bool IsShooting {
-		get {
-			return isShooting;
-		}
-		set {
-			isShooting = value;
-		}
-	}	
-
-	void Update ()
-	{
-		if (IsShooting) {
-			Shoot ();
-		} else {
-			mCurrentFireTime = 0;
 		}
 	}
 }
