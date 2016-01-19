@@ -310,7 +310,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -808328185
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ebcde48508da607448708dea21c7065b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1fd3c28ec5ebaef4d8511f68a1b521c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &192733091
 Prefab:
@@ -692,7 +692,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -808328185
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ebcde48508da607448708dea21c7065b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1fd3c28ec5ebaef4d8511f68a1b521c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &409988364
 GameObject:

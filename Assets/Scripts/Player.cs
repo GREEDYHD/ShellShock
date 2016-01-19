@@ -7,7 +7,6 @@ public class Player : MonoBehaviour
 	public Weapon mEquippedWeapon;
 	
 	public int mPlayerNumber;
-
 	public int PlayerNumber {
 		get {
 			return mPlayerNumber;
@@ -49,6 +48,7 @@ public class Player : MonoBehaviour
 				}
 			}
 		}
+
 	}
 
 	void OnCollisionEnter2D (Collision2D coll)

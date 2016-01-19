@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public abstract class Weapon : MonoBehaviour
@@ -15,6 +16,7 @@ public abstract class Weapon : MonoBehaviour
 	protected int mAmmoRemaining = 100;
 	protected int mAmmoMax = 100;
 
+
 	protected Vector2 mShootDirection = new Vector2 (0, 0);
 
 	public Vector2 ShootDirection {
@@ -25,6 +27,7 @@ public abstract class Weapon : MonoBehaviour
 			mShootDirection = value;
 		}
 	}
+
 
 	public GameObject mProjectile;
 
