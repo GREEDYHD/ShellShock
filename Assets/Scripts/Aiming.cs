@@ -3,49 +3,85 @@ using System.Collections;
 
 public class Aiming : MonoBehaviour
 {
-	public GameObject player;
-	private PlayerActions _playerActions;
-	private SpriteRenderer reticleRenderer;
+    public GameObject player;
+    private PlayerActions _playerActions;
+    private SpriteRenderer reticleRenderer;
 
-	float Range = 3f; //Range the reticle can move from the origin(player)
-	Vector2 mAimDirection;
-	public GameObject mReticle;
+    Vector2 mDefaultPosition = new Vector2(0.0f, 0.0f);
 
-	void Start()
-	{
-		reticleRenderer = GetComponent<SpriteRenderer>();
-		_playerActions = player.GetComponent<PlayerActions>();
-		reticleRenderer.enabled = true;
-	}
+    float Range = 3f; //Range the reticle can move from the origin(player)
+    Vector2 mAimDirection;
+    Vector2 mPreviousAimDirection = new Vector2(0.0f, 0.5f);
+    Vector2 mCorrectedAimDirection = new Vector2(0.0f, 0.0f);
 
-	public Vector2 AimDirection {
-		get {
-			return mAimDirection;
-		}
-		set {
-			mAimDirection = value;
-		}
-	}
+    public GameObject mReticle;
 
+    void Start()
+    {
+        reticleRenderer = GetComponent<SpriteRenderer>();
+        _playerActions = player.GetComponent<PlayerActions>();
+        reticleRenderer.enabled = true;
+    }
 
-	void Update ()
-	{
-		Vector2 playerPosition = new Vector2 (transform.position.x, transform.position.y);
-		mAimDirection = new Vector2 (Input.GetAxis ("Player_" + GetComponent<Player> ().PlayerNumber + "_RJoystickX"), Input.GetAxis ("Player_" + GetComponent<Player> ().PlayerNumber +  "_RJoystickY")).normalized;
-		mReticle.transform.position = playerPosition + (mAimDirection * Range);
-		//Debug.DrawLine (playerPosition, playerPosition + mAimDirection * Range);
-	}
+    public Vector2 AimDirection
+    {
+        get
+        {
+            return mAimDirection;
+        }
+        set
+        {
+            mAimDirection = value;
+        }
+    }
 
-	public void ReticleRender()
-	{
-		if (_playerActions.isBallin == true)
-		{
-			reticleRenderer.enabled = false;
-		}
-		
-		if (_playerActions.isBallin == false)
-		{
-			reticleRenderer.enabled = true;
-		}
-	}
+    public Vector2 CorrectedAimDirection
+    {
+        get
+        {
+            return - mCorrectedAimDirection;
+        }
+
+        set
+        {
+            mCorrectedAimDirection = value;
+        }
+    }
+
+    void Update()
+    {
+        Vector2 playerPosition = new Vector2(transform.position.x, transform.position.y);
+        mAimDirection = new Vector2(Input.GetAxis("Player_" + GetComponent<Player>().PlayerNumber + "_RJoystickX"), Input.GetAxis("Player_" + GetComponent<Player>().PlayerNumber + "_RJoystickY")).normalized;
+
+        if (mAimDirection != mPreviousAimDirection && mAimDirection.sqrMagnitude > 0)
+        {
+            //Get the angle in degrees between the aim direction and the up direction
+            float angle = Vector2.Angle(mAimDirection, Vector2.up);
+            //Gets the sign value for the degrees as Vector2.Angle will round 270 to 90 degrees
+            //Then multiplies it by the angle so 20 degrees becomes -90 degrees
+            float sinedAngle = Mathf.Sign(Vector3.Cross(mAimDirection, Vector3.up).z) * angle;
+            //Calculates the numerator for the 8 sections.  
+            int spriteNumber = Mathf.RoundToInt(((sinedAngle <= -157.5f ? 180 : sinedAngle) + 180) / 45);
+
+            mCorrectedAimDirection = new Vector2((Mathf.Sin(spriteNumber * 45 * Mathf.Deg2Rad)), (Mathf.Cos(spriteNumber * 45 * Mathf.Deg2Rad))) * Range;
+            mReticle.transform.position = mDefaultPosition + playerPosition - (mCorrectedAimDirection);
+            //Debug.DrawLine (playerPosition, playerPosition + mAimDirection * Range);
+
+            SpriteManager.instance.ChangeSprite(spriteNumber);
+            mPreviousAimDirection = mAimDirection;
+        }
+    }
+
+    public void ReticleRender()
+    {
+        if (_playerActions.isBallin == true)
+        {
+            reticleRenderer.enabled = false;
+        }
+
+        if (_playerActions.isBallin == false)
+        {
+            reticleRenderer.enabled = true;
+        }
+    }
 }

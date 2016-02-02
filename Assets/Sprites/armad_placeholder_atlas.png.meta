@@ -1,0 +1,121 @@
+fileFormatVersion: 2
+guid: 8d5e240089c1c994291391e0a9631f95
+timeCreated: 1453993617
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: armad_placeholder_ball
+    21300002: armad_placeholder_e
+    21300004: armad_placeholder_n
+    21300006: armad_placeholder_s
+    21300008: armad_placeholder_se
+    21300010: armade_placeholder_ne
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: armad_placeholder_ball
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 191
+        width: 69
+        height: 64
+      alignment: 9
+      pivot: {x: .550724626, y: .484375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: armad_placeholder_e
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 113
+        width: 64
+        height: 76
+      alignment: 9
+      pivot: {x: .421875, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: armad_placeholder_n
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 180
+        width: 44
+        height: 75
+      alignment: 9
+      pivot: {x: .522727251, y: .49333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: armad_placeholder_s
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 25
+        width: 38
+        height: 75
+      alignment: 9
+      pivot: {x: .605263174, y: .49333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: armad_placeholder_se
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 35
+        width: 62
+        height: 76
+      alignment: 9
+      pivot: {x: .45161289, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: armade_placeholder_ne
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 102
+        width: 60
+        height: 76
+      alignment: 9
+      pivot: {x: .383333325, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

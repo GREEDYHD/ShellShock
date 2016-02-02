@@ -398,6 +398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEquippedWeapon: {fileID: 1790796206}
   mPlayerNumber: 1
+  slider: {fileID: 0}
 --- !u!114 &868394540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,6 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9953f2ce208997f4590922eebec801a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   mReticle: {fileID: 321084116}
 --- !u!1 &958557796
 GameObject:
@@ -522,6 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9953f2ce208997f4590922eebec801a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   mReticle: {fileID: 592611411}
 --- !u!114 &1964874407
 MonoBehaviour:
@@ -536,6 +539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEquippedWeapon: {fileID: 958557797}
   mPlayerNumber: 2
+  slider: {fileID: 0}
 --- !u!114 &1964874408
 MonoBehaviour:
   m_ObjectHideFlags: 0
