@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 402304}
   - 212: {fileID: 21228528}
   - 50: {fileID: 5085068}
-  - 61: {fileID: 6114004}
   - 114: {fileID: 11424890}
+  - 58: {fileID: 5897142}
   m_Layer: 8
   m_Name: Bullet
   m_TagString: Projectile
@@ -37,7 +37,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104962}
-  m_Mass: 9.99999975e-05
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -46,8 +46,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6114004
-BoxCollider2D:
+--- !u!58 &5897142
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -58,7 +58,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: .159999996, y: .159999996}
+  m_Radius: .0799999982
 --- !u!114 &11424890
 MonoBehaviour:
   m_ObjectHideFlags: 1

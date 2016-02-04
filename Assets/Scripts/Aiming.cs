@@ -9,9 +9,9 @@ public class Aiming : MonoBehaviour
 
     Vector2 mDefaultPosition = new Vector2(0.0f, 0.0f);
 
-    float Range = 3f; //Range the reticle can move from the origin(player)
+    float Range = 1f; //Range the reticle can move from the origin(player)
     Vector2 mAimDirection;
-    Vector2 mPreviousAimDirection = new Vector2(0.0f, 0.5f);
+    Vector2 mPreviousAimDirection = new Vector2(0.0f, 0.0f);
     Vector2 mCorrectedAimDirection = new Vector2(0.0f, 0.0f);
 
     public GameObject mReticle;
@@ -34,7 +34,6 @@ public class Aiming : MonoBehaviour
             mAimDirection = value;
         }
     }
-
     public Vector2 CorrectedAimDirection
     {
         get
@@ -53,7 +52,8 @@ public class Aiming : MonoBehaviour
         Vector2 playerPosition = new Vector2(transform.position.x, transform.position.y);
         mAimDirection = new Vector2(Input.GetAxis("Player_" + GetComponent<Player>().PlayerNumber + "_RJoystickX"), Input.GetAxis("Player_" + GetComponent<Player>().PlayerNumber + "_RJoystickY")).normalized;
 
-        if (mAimDirection != mPreviousAimDirection && mAimDirection.sqrMagnitude > 0)
+        //mReticle.gameObject.SetActive(false);
+        if (mAimDirection != mPreviousAimDirection && mAimDirection.magnitude > 0)
         {
             //Get the angle in degrees between the aim direction and the up direction
             float angle = Vector2.Angle(mAimDirection, Vector2.up);
@@ -64,6 +64,7 @@ public class Aiming : MonoBehaviour
             int spriteNumber = Mathf.RoundToInt(((sinedAngle <= -157.5f ? 180 : sinedAngle) + 180) / 45);
 
             mCorrectedAimDirection = new Vector2((Mathf.Sin(spriteNumber * 45 * Mathf.Deg2Rad)), (Mathf.Cos(spriteNumber * 45 * Mathf.Deg2Rad))) * Range;
+
             mReticle.transform.position = mDefaultPosition + playerPosition - (mCorrectedAimDirection);
             //Debug.DrawLine (playerPosition, playerPosition + mAimDirection * Range);
 

@@ -2,10 +2,7 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/Sprites/armad_placeholder_atlas.tpsheet
-- Assets/Bin/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
 - Assets/Sprites/armad_placeholder_atlas.png
-- Assets/Bin/Example/SpriteSheet/sprites.png
 normalmapFileNames:
 - 
-- Assets/Bin/Example/SpriteSheet/sprites_n.png
