@@ -1,8 +1,0 @@
-version: 2
-importPivots: 1
-tpsheetFileNames:
-- Assets/Sprites/armad_placeholder_atlas.tpsheet
-textureFileNames:
-- Assets/Sprites/armad_placeholder_atlas.png
-normalmapFileNames:
-- 

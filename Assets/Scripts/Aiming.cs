@@ -34,16 +34,17 @@ public class Aiming : MonoBehaviour
             mAimDirection = value;
         }
     }
+
     public Vector2 CorrectedAimDirection
     {
         get
         {
-            return - mCorrectedAimDirection;
+            return - mCorrectedAimDirection.normalized;
         }
 
         set
         {
-            mCorrectedAimDirection = value;
+            mCorrectedAimDirection = value.normalized;
         }
     }
 

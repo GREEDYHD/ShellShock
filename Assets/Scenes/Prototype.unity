@@ -2236,11 +2236,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2046131664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 684f389db4a8e194a89af18d0021af15, type: 3}
+  m_Script: {fileID: 11500000, guid: 15ecbb6400f84ee4abc1ec2773807df8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hasInfiniteAmmo: 1
-  mProjectile: {fileID: 104962, guid: dea1b2a0b5b8d2c46adb881aa59fc2a9, type: 2}
+  mProjectile: {fileID: 137588, guid: 9e746a774e0985044ab325a4e290cd4b, type: 2}
 --- !u!4 &2046131666
 Transform:
   m_ObjectHideFlags: 0

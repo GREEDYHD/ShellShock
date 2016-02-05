@@ -12,6 +12,7 @@ GameObject:
   - 50: {fileID: 5035962}
   - 58: {fileID: 5882614}
   - 96: {fileID: 9682518}
+  - 114: {fileID: 11428392}
   m_Layer: 0
   m_Name: Grenade
   m_TagString: Untagged
@@ -33,7 +34,6 @@ Transform:
   m_RootOrder: 0
 --- !u!50 &5035962
 Rigidbody2D:
-  serializedVersion: 2
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -42,11 +42,11 @@ Rigidbody2D:
   m_LinearDrag: 1.5
   m_AngularDrag: 1
   m_GravityScale: 0
+  m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!58 &5882614
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -105,6 +105,18 @@ TrailRenderer:
       rgba: 2108346570
   m_MinVertexDistance: .100000001
   m_Autodestruct: 0
+--- !u!114 &11428392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3419894c82dd50c42ba4c128870a45e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grenadeLife: .5
 --- !u!212 &21291850
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -129,7 +141,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c77727c7171a5034da4266472a7fdee3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e3dda2e7dbee8d418aafbbd60b39913, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
