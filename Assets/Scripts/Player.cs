@@ -46,12 +46,11 @@ public class Player : MonoBehaviour
     {
         if (mEquippedWeapon)
         {
-            mEquippedWeapon.ShootDirection = GetComponent<Aiming>().CorrectedAimDirection;
             if (GetComponent<Aiming>().AimDirection.magnitude > 0.9)
             {
                 if (Input.GetButton("Player_" + mPlayerNumber + "_Fire1"))
                 {
-                    if (!mEquippedWeapon.Shoot())
+                    if (!mEquippedWeapon.Shoot(GetComponent<Aiming>().CorrectedAimDirection))
                     {
                         mEquippedWeapon = null;
                     }

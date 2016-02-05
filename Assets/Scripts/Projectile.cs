@@ -28,9 +28,9 @@ public class Projectile : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        Vector3 dir = (Vector2)transform.position - mRigidBody.velocity;
+        Vector3 dir = mRigidBody.velocity.normalized;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle - 180, Vector3.forward);
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
     public void Fire(Vector2 vel, int damage)
@@ -39,9 +39,10 @@ public class Projectile : MonoBehaviour
         mRigidBody = gameObject.GetComponent<Rigidbody2D>();
         mRigidBody.velocity = mVelocity;
         mDamage = damage;
-        Vector3 dir = new Vector2(transform.position.x, transform.position.y) - vel;
+        Vector3 dir = vel.normalized;
+        Debug.Log(dir);
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle - 180, Vector3.forward);
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
     void OnCollisionEnter2D(Collision2D bulletCollider)
