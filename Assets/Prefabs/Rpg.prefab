@@ -27,6 +27,7 @@ GameObject:
   - 212: {fileID: 21285858}
   - 50: {fileID: 5003762}
   - 61: {fileID: 6158194}
+  - 114: {fileID: 11459858}
   m_Layer: 0
   m_Name: Rpg
   m_TagString: Untagged
@@ -71,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .363999993, y: 0, z: 0}
+  m_LocalPosition: {x: -.374000013, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 445634}
@@ -83,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .360000014, y: 0, z: 0}
+  m_LocalPosition: {x: -.372999996, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 445634}
@@ -103,7 +104,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6158194
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -207,6 +208,17 @@ TrailRenderer:
       rgba: 16777215
   m_MinVertexDistance: .100000001
   m_Autodestruct: 0
+--- !u!114 &11459858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa64ce2836dad8944a68f4ea4695a6b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21285858
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -231,7 +243,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b57e4994610823f4dbd47bb639ec58bf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 40362e0797d41384b931d50f2e41e039, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
