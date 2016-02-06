@@ -12,7 +12,7 @@ public class RocketLauncher : Weapon {
 		mSpreadAngle = Mathf.PI / 18; // Angle in radians  (360 degrees = 2PI Radians)
 		mFireRate = 1f; // Max fire rate is 60 as the game runs at 60 fps
 		mChargeTime = 0f;
-		mMuzzleVelocity = 75f;
+		mMuzzleVelocity = 20f;
 		mCurrentFireTime = 0f;
 		mAmmoRemaining = 1;
 		mAmmoMax = 1;

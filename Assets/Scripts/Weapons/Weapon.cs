@@ -4,13 +4,13 @@ using System.Collections;
 
 public abstract class Weapon : MonoBehaviour
 {
-    protected int mDamage;
-    protected float mCurrentReloadTime = 0f;
-    protected float mReloadTime = 10f;
-    protected float mSpread = 2f; //spread
+    protected int mDamage; //Damage per bullet
+    protected float mCurrentReloadTime = 0f; //current reload time compared to mReloadTime
+    protected float mReloadTime = 10f; //Reload time in seconds
+    protected float mSpread = 2f; //Bullet spread
     protected float mSpreadAngle = Mathf.PI / 18; // Angle in radians  (360 degrees = 2PI Radians)
     protected float mFireRate = 60f;//Max fire rate is 60 as the game runs at 60 fps
-    protected float mChargeTime = 0f;
+    protected float mChargeTime = 0f; //if 
     protected float mMuzzleVelocity = 40f;
     protected float mCurrentFireTime = 0f;
     protected int mAmmoRemaining = 100;
