@@ -6,12 +6,14 @@ public class Ball : MonoBehaviour {
 	public GameObject player;
 	private SpriteRenderer ballRenderer;
 	private Collider2D ballCollider;
+    private Rigidbody2D rb;
 	
 	void Start () 
 	{
 		ballCollider = GetComponent<Collider2D>();
 		ballRenderer = GetComponent<SpriteRenderer>();
-		ballCollider.enabled = false;
+        rb = player.GetComponentInParent<Rigidbody2D>();
+        ballCollider.enabled = false;
 		ballRenderer.enabled = false;
 	}
 
@@ -19,13 +21,26 @@ public class Ball : MonoBehaviour {
 	{
 		if (player.GetComponent<PlayerActions>().isBallin == true)
 		{
-			ballCollider.enabled = true;
-			ballRenderer.enabled = true;
+            Debug.Log("Hi");
+            Debug.Log(rb.drag);
+            float tCount = 0.0f;
+            tCount += Time.deltaTime;
+            rb.drag = 8.5f;
+            //rb.velocity = rb.AddForce(new Vector2(rb.drag);
+            if (tCount >= 3.0f)
+            {
+                ballCollider.enabled = true;
+                ballRenderer.enabled = true;
+            }
+
 		}
 		
 		if (player.GetComponent<PlayerActions>().isBallin == false)
 		{
-			ballCollider.enabled = false;
+            rb.drag = 100;
+            //rb.AddForce(new Vector2(player.transform.position.x, rb.drag));
+           // rb.AddForce(new Vector2(rb.drag, player.transform.position.y));
+            ballCollider.enabled = false;
 			ballRenderer.enabled = false;
 		}
 	}

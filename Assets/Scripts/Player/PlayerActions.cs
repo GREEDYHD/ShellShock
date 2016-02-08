@@ -46,8 +46,14 @@ public class PlayerActions: MonoBehaviour
 		
 		if (isBallin == true)
 		{
-			playerCollider.enabled = false;
-			playerRenderer.enabled = false;
+            float tCount = 0.0f;
+            tCount += Time.deltaTime;
+            if(tCount >= 3.0f)
+            {
+                playerCollider.enabled = false;
+                playerRenderer.enabled = false;
+            }
+			
 		}
 	}
 }
