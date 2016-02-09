@@ -15,6 +15,7 @@ public abstract class Weapon : MonoBehaviour
     protected float mCurrentFireTime = 0f;
     protected int mAmmoRemaining = 100;
     protected int mAmmoMax = 100;
+    protected int mMaxBounces = 0;
 
     public bool hasInfiniteAmmo;
 
@@ -34,7 +35,7 @@ public abstract class Weapon : MonoBehaviour
 
     public GameObject mProjectile;
 
-    public bool Shoot(Vector2 dir)
+    public virtual bool Shoot(Vector2 dir)
     {
         if (mAmmoRemaining > 0)
         {
@@ -42,7 +43,7 @@ public abstract class Weapon : MonoBehaviour
             if (mCurrentFireTime > 1 / mFireRate)
             {
                 GameObject firedProjectile = (GameObject)Instantiate(mProjectile, new Vector2(transform.position.x, transform.position.y) + dir.normalized * 1.8f, Quaternion.identity);
-                firedProjectile.GetComponent<Projectile>().Fire((dir * mMuzzleVelocity) + spr, mDamage);
+                firedProjectile.GetComponent<Projectile>().Fire((dir * mMuzzleVelocity) + spr, mDamage, mMaxBounces);
                 if (!hasInfiniteAmmo)
                 {
                     mAmmoRemaining--;

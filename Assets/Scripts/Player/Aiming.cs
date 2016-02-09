@@ -48,6 +48,20 @@ public class Aiming : MonoBehaviour
         }
     }
 
+    public float AimAngle
+    {
+        get
+        {
+            return mAimAngle;
+        }
+
+        set
+        {
+            mAimAngle = value;
+        }
+    }
+
+    private float mAimAngle;
     void Update()
     {
         Vector2 playerPosition = new Vector2(transform.position.x, transform.position.y);
@@ -60,18 +74,23 @@ public class Aiming : MonoBehaviour
             float angle = Vector2.Angle(mAimDirection, Vector2.up);
             //Gets the sign value for the degrees as Vector2.Angle will round 270 to 90 degrees
             //Then multiplies it by the angle so 20 degrees becomes -90 degrees
-            float sinedAngle = Mathf.Sign(Vector3.Cross(mAimDirection, Vector3.up).z) * angle;
+            mAimAngle = Mathf.Sign(Vector3.Cross(mAimDirection, Vector3.up).z) * angle;
+
             //Calculates the numerator for the 8 sections.  
-            int spriteNumber = Mathf.RoundToInt(((sinedAngle <= -157.5f ? 180 : sinedAngle) + 180) / 45);
+            int spriteNumber = Mathf.RoundToInt(((mAimAngle <= -157.5f ? 180 : mAimAngle) + 180) / 45);
 
-            mCorrectedAimDirection = new Vector2((Mathf.Sin(spriteNumber * 45 * Mathf.Deg2Rad)), (Mathf.Cos(spriteNumber * 45 * Mathf.Deg2Rad))) * Range;
+            mCorrectedAimDirection = new Vector2((Mathf.Sin(spriteNumber * 45 * Mathf.Deg2Rad)), (Mathf.Cos(spriteNumber * 45 * Mathf.Deg2Rad))).normalized * Range;
 
-            mReticle.transform.position = mDefaultPosition + playerPosition - (mCorrectedAimDirection) * 1.5f;
-            //Debug.DrawLine (playerPosition, playerPosition + mAimDirection * Range);
+            mReticle.transform.position = mDefaultPosition + playerPosition - mCorrectedAimDirection;
 
             SpriteManager.instance.ChangeSprite(spriteNumber);
             mPreviousAimDirection = mAimDirection;
         }
+    }
+
+    void ChangePlayerSprite()
+    {
+        
     }
 
     public void ReticleRender()

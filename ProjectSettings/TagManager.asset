@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -48,11 +49,11 @@ TagManager:
   - name: WallsBehind
     uniqueID: 2015190895
     locked: 0
-  - name: WallsInFront
-    uniqueID: 1573436195
-    locked: 0
   - name: Players
     uniqueID: 3538980255
+    locked: 0
+  - name: WallsInFront
+    uniqueID: 1573436195
     locked: 0
   - name: HP BAR
     uniqueID: 44844207
