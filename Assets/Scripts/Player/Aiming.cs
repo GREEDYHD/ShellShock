@@ -81,7 +81,7 @@ public class Aiming : MonoBehaviour
 
             mCorrectedAimDirection = new Vector2((Mathf.Sin(spriteNumber * 45 * Mathf.Deg2Rad)), (Mathf.Cos(spriteNumber * 45 * Mathf.Deg2Rad))).normalized * Range;
 
-            mReticle.transform.position = mDefaultPosition + playerPosition - mCorrectedAimDirection;
+            mReticle.transform.position = mDefaultPosition + playerPosition - mCorrectedAimDirection * 2;
 
             SpriteManager.instance.ChangeSprite(spriteNumber);
             mPreviousAimDirection = mAimDirection;

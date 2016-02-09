@@ -11,7 +11,7 @@ public abstract class Weapon : MonoBehaviour
     protected float mSpreadAngle = Mathf.PI / 18; // Angle in radians  (360 degrees = 2PI Radians)
     protected float mFireRate = 60f;//Max fire rate is 60 as the game runs at 60 fps
     protected float mChargeTime = 0f;
-    protected float mMuzzleVelocity = 40f;
+    protected float mMuzzleVelocity = 0f;
     protected float mCurrentFireTime = 0f;
     protected int mAmmoRemaining = 100;
     protected int mAmmoMax = 100;

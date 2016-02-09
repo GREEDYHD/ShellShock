@@ -1246,12 +1246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mPlayer: {fileID: 1515989180}
---- !u!114 &422413060 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11481560, guid: f89e011de36c1124e97bf9847d797ad1,
-    type: 2}
-  m_PrefabInternal: {fileID: 575296181}
-  m_Script: {fileID: 11500000, guid: 83746ccf99afbe54b8a51230573316e0, type: 3}
 --- !u!1001 &423590383
 Prefab:
   m_ObjectHideFlags: 0
@@ -2804,7 +2798,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -808328185
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1fd3c28ec5ebaef4d8511f68a1b521c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4272,7 +4266,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 466792, guid: a29704e167ad9c2488e12191b5ab4761, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -34.0999985
       objectReference: {fileID: 0}
     - target: {fileID: 466792, guid: a29704e167ad9c2488e12191b5ab4761, type: 2}
       propertyPath: m_LocalPosition.y
@@ -5962,7 +5956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3800ba1d4402403408247b3365ec08f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mEquippedWeapon: {fileID: 422413060}
+  mEquippedWeapon: {fileID: 1516414960}
   mPlayerNumber: 1
   slider: {fileID: 0}
 --- !u!4 &1515989185
@@ -6047,6 +6041,12 @@ BoxCollider2D:
   m_Offset: {x: -.125, y: -1}
   serializedVersion: 2
   m_Size: {x: .800000012, y: .200000003}
+--- !u!114 &1516414960 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11440672, guid: 0d300e0327b70da49abe5b0e9498a7a7,
+    type: 2}
+  m_PrefabInternal: {fileID: 2077288731}
+  m_Script: {fileID: 11500000, guid: b3aa7abba9400b449baa976216c4b8ef, type: 3}
 --- !u!1 &1530236413
 GameObject:
   m_ObjectHideFlags: 0
@@ -6615,6 +6615,10 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009756, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -7992,6 +7996,10 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1515989180}
+    - target: {fileID: 21228500, guid: c6cb8b851f962464c93bfa28f40064da, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -755987041
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6cb8b851f962464c93bfa28f40064da, type: 2}
   m_IsPrefabParent: 0

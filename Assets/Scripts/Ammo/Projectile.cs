@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Projectile : MonoBehaviour
 {
-    protected float mMaxBounces;
-    protected float mCurrentBounces = 0;
+    protected int mMaxBounces = 3;
+    protected int mCurrentBounces = 0;
 
     protected Vector2 mVelocity;
     protected Rigidbody2D mRigidBody;
@@ -37,12 +37,12 @@ public class Projectile : MonoBehaviour
     {
         mVelocity = vel;
         mRigidBody = gameObject.GetComponent<Rigidbody2D>();
-        mRigidBody.velocity = mVelocity;
+        mRigidBody.velocity = mVelocity / 10;
         mDamage = damage;
         Vector3 dir = vel.normalized;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        Destroy(gameObject, 5f);
+       // Destroy(gameObject, 5f);
     }
 
     void OnCollisionEnter2D(Collision2D bulletCollider)

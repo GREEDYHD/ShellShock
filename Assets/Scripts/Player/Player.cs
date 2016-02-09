@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
     {
         if (coll.gameObject.tag == "Projectile")
         {
-            slider.value -= (float)coll.gameObject.GetComponent<Projectile>().Damage / 100;
+            //slider.value -= (float)coll.gameObject.GetComponent<Projectile>().Damage / 100;
             Destroy(coll.gameObject);
         }
     }

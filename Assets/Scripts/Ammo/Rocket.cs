@@ -5,6 +5,6 @@ public class Rocket : Projectile
 {
 	void Awake()
 	{
-		mMaxBounces = 20f;
+		mMaxBounces = 20;
 	}
 }
