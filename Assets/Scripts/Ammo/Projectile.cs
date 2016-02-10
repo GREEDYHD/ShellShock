@@ -37,12 +37,12 @@ public class Projectile : MonoBehaviour
     {
         mVelocity = vel;
         mRigidBody = gameObject.GetComponent<Rigidbody2D>();
-        mRigidBody.velocity = mVelocity / 10;
+        mRigidBody.velocity = mVelocity;
         mDamage = damage;
         Vector3 dir = vel.normalized;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-       // Destroy(gameObject, 5f);
+        Destroy(gameObject, 5f);
     }
 
     void OnCollisionEnter2D(Collision2D bulletCollider)

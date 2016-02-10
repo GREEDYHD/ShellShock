@@ -21,8 +21,6 @@ public class Ball : MonoBehaviour
     {
         if (player.GetComponent<PlayerActions>().isBallin == true)
         {
-            Debug.Log("Hi");
-            Debug.Log(rb.drag);
             float tCount = 0.0f;
             tCount += Time.deltaTime;
             rb.drag = 8.5f;

@@ -1,0 +1,606 @@
+fileFormatVersion: 2
+guid: 425ce0f3d99257e4f81a0c0d4b7d8089
+timeCreated: 1455109065
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LargeMissiles_0
+    21300002: LargeMissiles_1
+    21300004: LargeMissiles_2
+    21300006: LargeMissiles_3
+    21300008: LargeMissiles_4
+    21300010: LargeMissiles_5
+    21300012: LargeMissiles_6
+    21300014: LargeMissiles_7
+    21300016: LargeMissiles_8
+    21300018: LargeMissiles_9
+    21300020: LargeMissiles_10
+    21300022: LargeMissiles_11
+    21300024: LargeMissiles_12
+    21300026: LargeMissiles_13
+    21300028: LargeMissiles_14
+    21300030: LargeMissiles_15
+    21300032: LargeMissiles_16
+    21300034: LargeMissiles_17
+    21300036: LargeMissiles_18
+    21300038: LargeMissiles_19
+    21300040: LargeMissiles_20
+    21300042: LargeMissiles_21
+    21300044: LargeMissiles_22
+    21300046: LargeMissiles_23
+    21300048: LargeMissiles_24
+    21300050: LargeMissiles_25
+    21300052: LargeMissiles_26
+    21300054: LargeMissiles_27
+    21300056: LargeMissiles_28
+    21300058: LargeMissiles_29
+    21300060: LargeMissiles_30
+    21300062: LargeMissiles_31
+    21300064: LargeMissiles_32
+    21300066: LargeMissiles_33
+    21300068: LargeMissiles_34
+    21300070: LargeMissiles_35
+    21300072: LargeMissiles_36
+    21300074: LargeMissiles_37
+    21300076: LargeMissiles_38
+    21300078: LargeMissiles_39
+    21300080: LargeMissiles_40
+    21300082: LargeMissiles_41
+    21300084: LargeMissiles_42
+    21300086: LargeMissiles_43
+    21300088: LargeMissiles_44
+    21300090: LargeMissiles_45
+    21300092: LargeMissiles_46
+    21300094: LargeMissiles_47
+    21300096: LargeMissiles_48
+    21300098: LargeMissiles_49
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: LargeMissiles_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 463
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 463
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 463
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_3
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 463
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_4
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 463
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_5
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 463
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_6
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 463
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_7
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 414
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_8
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 414
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_9
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 413
+        width: 62
+        height: 32
+      alignment: 9
+      pivot: {x: .499999762, y: .503416836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_10
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 413
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_11
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 413
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_12
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 413
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_13
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 365
+        width: 124
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_14
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 365
+        width: 124
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_15
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 366
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_16
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 367
+        width: 124
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_17
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 323
+        width: 124
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_18
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 323
+        width: 124
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_19
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 324
+        width: 124
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_20
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 323
+        width: 124
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_21
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 275
+        width: 124
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_22
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 275
+        width: 124
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_23
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 275
+        width: 124
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_24
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 276
+        width: 124
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_25
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 232
+        width: 124
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_26
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 232
+        width: 124
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_27
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 232
+        width: 124
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_28
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 232
+        width: 124
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_29
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 189
+        width: 124
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_30
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 188
+        width: 124
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_31
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 188
+        width: 124
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_32
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 188
+        width: 124
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_33
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 145
+        width: 124
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_34
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 146
+        width: 124
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_35
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 144
+        width: 124
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_36
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 142
+        width: 124
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_37
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 94
+        width: 124
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_38
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 98
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_39
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 3
+        width: 34
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_40
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 104
+        width: 28
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_41
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 106
+        width: 32
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_42
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 18
+        width: 16
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_43
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 14
+        width: 20
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_44
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 10
+        width: 22
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_45
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 6
+        width: 23
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_46
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 49
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_47
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 33
+        width: 201
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_48
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 30
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LargeMissiles_49
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 3
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

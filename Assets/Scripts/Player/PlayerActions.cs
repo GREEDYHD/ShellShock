@@ -20,7 +20,6 @@ public class PlayerActions : MonoBehaviour
     {
         if (Input.GetButton("Player_" + GetComponent<Player>().PlayerNumber + "_Ball"))
         {
-            Debug.Log(GetComponent<Player>().PlayerNumber);
             isBallin = true;
             PlayerRender();
             GetComponent<Aiming>().ReticleRender();
