@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
 
     public int mPlayerNumber;
 
+	public float wTime; //Wait time between being able to use holes or otherwise it looks glitchy
+
     public int PlayerNumber
     {
         get
@@ -57,13 +59,15 @@ public class Player : MonoBehaviour
                 }
             }
         }
+
+		wTime -= Time.deltaTime;
     }
 
     void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.gameObject.tag == "Projectile")
         {
-            slider.value -= (float)coll.gameObject.GetComponent<Projectile>().Damage / 100;
+            slider.value -= (float)coll.gameObject.GetComponent<Projectile>().Damage / 1000;
             Destroy(coll.gameObject);
         }
     }
