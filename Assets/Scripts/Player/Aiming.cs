@@ -70,14 +70,8 @@ public class Aiming : MonoBehaviour
         //mReticle.gameObject.SetActive(false);
         if (mAimDirection != mPreviousAimDirection && mAimDirection.magnitude > 0)
         {
-            //Get the angle in degrees between the aim direction and the up direction
-            float angle = Vector2.Angle(mAimDirection, Vector2.up);
-            //Gets the sign value for the degrees as Vector2.Angle will round 270 to 90 degrees
-            //Then multiplies it by the angle so 20 degrees becomes -90 degrees
-            mAimAngle = Mathf.Sign(Vector3.Cross(mAimDirection, Vector3.up).z) * angle;
-
-            //Calculates the numerator for the 8 sections.  
-            int spriteNumber = Mathf.RoundToInt(((mAimAngle <= -157.5f ? 180 : mAimAngle) + 180) / 45);
+            //Rounds to the nearest 45 degrees to match the sprite
+            int spriteNumber = Mathf.RoundToInt(((mAimDirection.SignedAngle() <= -157.5f ? 180 : mAimDirection.SignedAngle()) + 180) / 45);
 
             mCorrectedAimDirection = new Vector2((Mathf.Sin(spriteNumber * 45 * Mathf.Deg2Rad)), (Mathf.Cos(spriteNumber * 45 * Mathf.Deg2Rad))).normalized * Range;
 

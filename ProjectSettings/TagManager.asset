@@ -52,6 +52,9 @@ TagManager:
   - name: Bullets
     uniqueID: 1815288447
     locked: 0
+  - name: UI
+    uniqueID: 326665161
+    locked: 0
   - name: WallsInFront
     uniqueID: 1573436195
     locked: 0

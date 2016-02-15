@@ -137,7 +137,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &12203079
@@ -151,7 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &17896794
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +205,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &17896797
@@ -218,7 +219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &34483259
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +273,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -8
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &34483262
@@ -285,7 +287,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &37801406
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &81155427 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -425,7 +429,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &131516910
@@ -439,7 +443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &133301613
 Prefab:
   m_ObjectHideFlags: 0
@@ -490,6 +495,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -546,7 +559,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -8
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &141303231
@@ -560,7 +573,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &147513977 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -617,7 +631,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &150020580
@@ -631,7 +645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &181631910
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +699,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &181631913
@@ -698,7 +713,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &182541589 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -759,7 +775,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &211814667
@@ -773,7 +789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &218565996
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,7 +843,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &218565999
@@ -840,7 +857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &239356421 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -899,6 +917,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -959,7 +985,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &350306828
@@ -973,7 +999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &395410955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,7 +1053,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &395410958
@@ -1040,7 +1067,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &401127910 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -1097,7 +1125,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &405973037
@@ -1111,7 +1139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &416088929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,7 +1193,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &416088932
@@ -1178,7 +1207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &422298038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,7 +1261,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &422298041
@@ -1245,7 +1275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &423590383
 Prefab:
   m_ObjectHideFlags: 0
@@ -1296,6 +1327,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -1352,7 +1391,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -12
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &425432457
@@ -1366,7 +1405,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &429382549
 Prefab:
   m_ObjectHideFlags: 0
@@ -1417,6 +1457,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -1471,6 +1519,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -1527,7 +1583,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &472855867
@@ -1541,7 +1597,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &506180911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,7 +1651,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &506180914
@@ -1608,7 +1665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &519272648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,7 +1719,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &519272651
@@ -1675,7 +1733,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &530218790
 Prefab:
   m_ObjectHideFlags: 0
@@ -1726,6 +1785,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -1782,7 +1849,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &547725653
@@ -1796,7 +1863,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &551894519
 Prefab:
   m_ObjectHideFlags: 0
@@ -1847,6 +1915,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -1903,7 +1979,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &567921910
@@ -1917,7 +1993,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &575296181
 Prefab:
   m_ObjectHideFlags: 0
@@ -2011,6 +2088,14 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
   m_IsPrefabParent: 0
@@ -2068,6 +2153,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -2128,7 +2221,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &606624574
@@ -2142,7 +2235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &628793038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2195,7 +2289,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &628793041
@@ -2209,7 +2303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &633158123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,7 +2357,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &633158126
@@ -2276,7 +2371,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &654199646 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -2295,7 +2391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &662376495
 Transform:
   m_ObjectHideFlags: 0
@@ -2303,7 +2399,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 662376494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.44348955, y: -16.6552505, z: .0743600354}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 888086322}
@@ -2486,6 +2582,14 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
   m_IsPrefabParent: 0
@@ -2541,7 +2645,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &678732539
@@ -2555,7 +2659,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &700862361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2608,7 +2713,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &700862364
@@ -2622,7 +2727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &702878541 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -2679,7 +2785,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &716243916
@@ -2693,7 +2799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &738094302
 Prefab:
   m_ObjectHideFlags: 0
@@ -2744,6 +2851,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -2868,7 +2983,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &780349439 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -2923,6 +3039,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -2979,7 +3103,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &788774547
@@ -2993,7 +3117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &802674073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3046,7 +3171,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &802674076
@@ -3060,7 +3185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &808156392
 Prefab:
   m_ObjectHideFlags: 0
@@ -3111,6 +3237,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -3167,7 +3301,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &825833667
@@ -3181,7 +3315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &827264328
 Prefab:
   m_ObjectHideFlags: 0
@@ -3232,6 +3367,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -3288,7 +3431,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &842039648
@@ -3302,7 +3445,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &846459898 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -3362,6 +3506,14 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
   m_IsPrefabParent: 0
@@ -3415,6 +3567,10 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -3478,6 +3634,14 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
   m_IsPrefabParent: 0
@@ -3533,7 +3697,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &932167376
@@ -3547,7 +3711,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &946995284
 Prefab:
   m_ObjectHideFlags: 0
@@ -3598,6 +3763,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -3652,6 +3825,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -3716,7 +3897,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -8
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1001010383
@@ -3730,7 +3911,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &1027029830
 Prefab:
   m_ObjectHideFlags: 0
@@ -3781,6 +3963,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -3837,7 +4027,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1038635113
@@ -3851,7 +4041,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &1046741424
 Prefab:
   m_ObjectHideFlags: 0
@@ -3902,6 +4093,10 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -3958,7 +4153,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1052628646
@@ -3972,7 +4167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1056855143
 GameObject:
   m_ObjectHideFlags: 0
@@ -4025,7 +4221,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1056855146
@@ -4039,7 +4235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &1059516469
 Prefab:
   m_ObjectHideFlags: 0
@@ -4090,6 +4287,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -4146,7 +4351,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1070871061
@@ -4160,7 +4365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &1121496788
 Prefab:
   m_ObjectHideFlags: 0
@@ -4253,6 +4459,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -4370,6 +4584,14 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
   m_IsPrefabParent: 0
@@ -4425,7 +4647,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1180201132
@@ -4439,7 +4661,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1188635186
 GameObject:
   m_ObjectHideFlags: 0
@@ -4492,7 +4715,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1188635189
@@ -4506,7 +4729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1203026561
 GameObject:
   m_ObjectHideFlags: 0
@@ -4559,7 +4783,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1203026564
@@ -4573,7 +4797,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &1211519084 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -4634,7 +4859,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1267263632
@@ -4648,7 +4873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &1271056703
 Prefab:
   m_ObjectHideFlags: 0
@@ -4699,6 +4925,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -4754,6 +4988,14 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
   m_IsPrefabParent: 0
@@ -4807,6 +5049,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -4865,6 +5115,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -4939,7 +5197,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &1348350073 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -4996,7 +5255,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1352100907
@@ -5010,7 +5269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &1354044622 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -5067,7 +5327,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1359920844
@@ -5081,7 +5341,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1380909682
 GameObject:
   m_ObjectHideFlags: 0
@@ -5134,7 +5395,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1380909685
@@ -5148,7 +5409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &1396237848 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -5204,9 +5466,91 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1416054458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1416054460}
+  - 212: {fileID: 1416054459}
+  - 60: {fileID: 1416054461}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1416054459
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416054458}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1573436195
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1416054460
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416054458}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.125, y: 7.53000021, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+--- !u!60 &1416054461
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416054458}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -2, y: 1}
+      - {x: 0, y: 2}
+      - {x: 2, y: 1}
+      - {x: 2, y: -1}
+      - {x: 0, y: -2}
+      - {x: -2, y: -1}
 --- !u!1 &1428163440
 GameObject:
   m_ObjectHideFlags: 0
@@ -5273,7 +5617,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1429924378
 GameObject:
   m_ObjectHideFlags: 0
@@ -5326,7 +5671,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1429924381
@@ -5340,7 +5685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1436282934
 GameObject:
   m_ObjectHideFlags: 0
@@ -5393,7 +5739,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1436282937
@@ -5407,7 +5753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &1439385341
 Prefab:
   m_ObjectHideFlags: 0
@@ -5501,6 +5848,14 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 19
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
   m_IsPrefabParent: 0
@@ -5554,6 +5909,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -5624,7 +5987,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &1487636732 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -5681,7 +6045,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1491026722
@@ -5695,7 +6059,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &1495068841
 Prefab:
   m_ObjectHideFlags: 0
@@ -5746,6 +6111,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -5802,7 +6175,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1496428321
@@ -5816,7 +6189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1504113224
 GameObject:
   m_ObjectHideFlags: 0
@@ -5869,7 +6243,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1504113227
@@ -5883,7 +6257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1515989180
 GameObject:
   m_ObjectHideFlags: 0
@@ -5902,11 +6277,11 @@ GameObject:
   - 61: {fileID: 1515989189}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1515989181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6099,7 +6474,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 17
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1530236416
@@ -6113,7 +6488,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &1533012203
 Prefab:
   m_ObjectHideFlags: 0
@@ -6164,6 +6540,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -6228,7 +6612,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1574947492
@@ -6242,7 +6626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1575615976
 GameObject:
   m_ObjectHideFlags: 0
@@ -6295,7 +6680,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1575615979
@@ -6309,7 +6694,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1605041811
 GameObject:
   m_ObjectHideFlags: 0
@@ -6362,7 +6748,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1605041814
@@ -6376,7 +6762,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1630591699
 GameObject:
   m_ObjectHideFlags: 0
@@ -6429,7 +6816,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1630591702
@@ -6443,7 +6830,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1644507213
 GameObject:
   m_ObjectHideFlags: 0
@@ -6496,7 +6884,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1644507216
@@ -6510,7 +6898,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &1650155028
 Prefab:
   m_ObjectHideFlags: 0
@@ -6561,6 +6950,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -6620,6 +7017,14 @@ Prefab:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
   m_IsPrefabParent: 0
@@ -6677,6 +7082,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -6755,7 +7168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1723565892
 GameObject:
   m_ObjectHideFlags: 0
@@ -6808,7 +7222,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1723565895
@@ -6822,7 +7236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1726136057
 GameObject:
   m_ObjectHideFlags: 0
@@ -6832,6 +7247,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1726136059}
   - 114: {fileID: 1726136058}
+  - 114: {fileID: 1726136060}
   m_Layer: 0
   m_Name: SpriteManager
   m_TagString: Untagged
@@ -6873,6 +7289,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &1726136060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1726136057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6827b406a7bb3974b9cb53313fdcd2cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mMainCamera: {fileID: 1795214386}
+  mGameObjectList:
+  - {fileID: 1416054458}
+  - {fileID: 0}
+  mGameObjectIndex: 0
+  mSelectedGameObject: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
+  mPlacedObjects: []
+  isRadialMenuActive: 0
 --- !u!1001 &1727039005
 Prefab:
   m_ObjectHideFlags: 0
@@ -6923,6 +7358,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -6977,6 +7420,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -7033,7 +7484,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1733892993
@@ -7047,7 +7498,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1745298358
 GameObject:
   m_ObjectHideFlags: 0
@@ -7100,7 +7552,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1745298361
@@ -7114,7 +7566,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &1754165362 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -7171,7 +7624,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1768966528
@@ -7185,7 +7638,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1773169783
 GameObject:
   m_ObjectHideFlags: 0
@@ -7238,7 +7692,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1773169786
@@ -7252,7 +7706,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1794368204
 GameObject:
   m_ObjectHideFlags: 0
@@ -7305,7 +7760,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1794368207
@@ -7319,7 +7774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1795214381
 GameObject:
   m_ObjectHideFlags: 0
@@ -7334,7 +7790,7 @@ GameObject:
   - 81: {fileID: 1795214383}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7458,7 +7914,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1805194327
@@ -7472,7 +7928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1808348073
 GameObject:
   m_ObjectHideFlags: 0
@@ -7525,7 +7982,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1808348076
@@ -7539,7 +7996,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1817135155
 GameObject:
   m_ObjectHideFlags: 0
@@ -7592,7 +8050,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1817135158
@@ -7606,7 +8064,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1832330054
 GameObject:
   m_ObjectHideFlags: 0
@@ -7659,7 +8118,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -8
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1832330057
@@ -7673,7 +8132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &1848055194
 GameObject:
   m_ObjectHideFlags: 0
@@ -7726,7 +8186,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1848055197
@@ -7740,7 +8200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &1857940721
 Prefab:
   m_ObjectHideFlags: 0
@@ -7791,6 +8252,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2015190895
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: -12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -7861,7 +8330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &1870699025 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -7928,6 +8398,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -8063,7 +8541,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1990191945
@@ -8077,7 +8555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!4 &2001692384 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423606, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -8134,7 +8613,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -14
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2007293569
@@ -8148,7 +8627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &2019112693
 GameObject:
   m_ObjectHideFlags: 0
@@ -8201,7 +8681,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2019112696
@@ -8215,7 +8695,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &2019169784
 GameObject:
   m_ObjectHideFlags: 0
@@ -8268,7 +8749,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2019169787
@@ -8282,7 +8763,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &2025109570
 Prefab:
   m_ObjectHideFlags: 0
@@ -8333,6 +8815,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -8389,7 +8879,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2054547614
@@ -8403,7 +8893,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &2058785552
 GameObject:
   m_ObjectHideFlags: 0
@@ -8456,7 +8947,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2058785555
@@ -8470,7 +8961,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &2073941179
 Prefab:
   m_ObjectHideFlags: 0
@@ -8521,6 +9013,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -8575,6 +9075,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -8673,7 +9181,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -12
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2080615688
@@ -8687,7 +9195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1001 &2094874905
 Prefab:
   m_ObjectHideFlags: 0
@@ -8738,6 +9247,14 @@ Prefab:
     - target: {fileID: 147556, guid: ad401782d8277234ca0d969dae072359, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1573436195
+      objectReference: {fileID: 0}
+    - target: {fileID: 21216376, guid: ad401782d8277234ca0d969dae072359, type: 2}
+      propertyPath: m_SortingOrder
+      value: 21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad401782d8277234ca0d969dae072359, type: 2}
@@ -8816,7 +9333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &2118656597
 GameObject:
   m_ObjectHideFlags: 0
@@ -8869,7 +9387,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2118656600
@@ -8883,7 +9401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &2144139463
 GameObject:
   m_ObjectHideFlags: 0
@@ -8936,7 +9455,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2144139466
@@ -8950,7 +9469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
 --- !u!1 &2146966965
 GameObject:
   m_ObjectHideFlags: 0
@@ -9003,7 +9523,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300004, guid: a2d98ef11024e4940a0f6d1d5cd06776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2146966968
@@ -9017,4 +9537,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2ee12122827314089358e83a009790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPlayer: {fileID: 1515989180}
+  mPlayer: {fileID: 0}
+  mMainCamera: {fileID: 0}
