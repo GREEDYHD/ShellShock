@@ -33,7 +33,7 @@ public class Paracrate : MonoBehaviour {
 
 	public void AmmoDrop()
 	{
-		transform.Translate(Vector2.left * flybySpeed * Time.deltaTime);
+		//transform.Translate(Vector2.left * flybySpeed * Time.deltaTime);
 		if (transform.position.x > -0.1 && transform.position.x < 0.1) 
 		{
 			Debug.Log ("Drop");

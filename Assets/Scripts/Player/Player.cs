@@ -37,20 +37,23 @@ public class Player : MonoBehaviour
     void Start()
     {
         mReticlePosition = mEquippedWeapon.transform.position;
-		mEquippedWeapon = weaponList [0];
+        mEquippedWeapon.transform.position = transform.position;
+        mEquippedWeapon.transform.parent = transform;
+        //mEquippedWeapon = weaponList [0];
     }
 
     void Update()
     {
-		mEquippedWeapon.transform.position = transform.position;
-		mEquippedWeapon.transform.parent = transform;
+		
         if (mEquippedWeapon)
         {
             if (GetComponent<Aiming>().AimDirection.magnitude > 0.9)
-            {
+            {   //if the fire button is pressed, fire the gun.
                 if (Input.GetButton("Player_" + mPlayerNumber + "_Fire1"))
                 {
+                    //emit the bullet casing particle system
 					minigunParticleSystem.Emit(1);
+                   
                     if (!mEquippedWeapon.Shoot(GetComponent<Aiming>().CorrectedAimDirection))
                     {
                         mEquippedWeapon = null;
