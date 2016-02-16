@@ -13,7 +13,7 @@ public abstract class Weapon : MonoBehaviour
     protected float mChargeTime = 0f; //if 
     protected float mMuzzleVelocity = 40f;
     protected float mCurrentFireTime = 0f;
-    protected int mAmmoRemaining = 100;
+    public int mAmmoRemaining = 100;
     protected int mAmmoMax = 100;
 
     public bool hasInfiniteAmmo;

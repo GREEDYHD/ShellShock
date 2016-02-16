@@ -4,9 +4,9 @@ using System.Collections;
 public class PlayerActions: MonoBehaviour 
 {
 	public GameObject ballObj;
-
+	public Player playerScript;
 	public bool isBallin = false; //curled up in a ball
-
+	public int weaponNumber;
 	private SpriteRenderer playerRenderer; 
 	private Collider2D playerCollider; 
 	
@@ -14,6 +14,7 @@ public class PlayerActions: MonoBehaviour
 	{
 		playerCollider = GetComponent<Collider2D>(); 
 		playerRenderer = GetComponent<SpriteRenderer>(); 
+		playerScript = GetComponent<Player> ();
 	}
 
 	void Update () 
@@ -34,6 +35,24 @@ public class PlayerActions: MonoBehaviour
 			GetComponent<Aiming>().ReticleRender();
 			ballObj.GetComponent<Ball>().BallRender();
 		}
+		//######################################################################################
+		//Youles 10/02/16
+		if(Input.GetButtonUp("Player_" + GetComponent<Player>().PlayerNumber + "_Switch"))
+		{
+			if (weaponNumber < playerScript.weaponList.Length) 
+			{
+				weaponNumber++;
+				playerScript.ChangeWeapon(weaponNumber);
+				Debug.Log (weaponNumber);
+
+			}
+			if (weaponNumber == playerScript.weaponList.Length) 
+			{
+				weaponNumber = 0;
+				playerScript.ChangeWeapon(weaponNumber);
+			}
+		}
+		//#######################################################################################
 	}
 
 	void PlayerRender()
@@ -46,14 +65,8 @@ public class PlayerActions: MonoBehaviour
 		
 		if (isBallin == true)
 		{
-            float tCount = 0.0f;
-            tCount += Time.deltaTime;
-            if(tCount >= 3.0f)
-            {
-                playerCollider.enabled = false;
-                playerRenderer.enabled = false;
-            }
-			
+			playerCollider.enabled = false;
+			playerRenderer.enabled = false;
 		}
 	}
 }
