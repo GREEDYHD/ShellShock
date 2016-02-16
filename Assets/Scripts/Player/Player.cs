@@ -29,6 +29,9 @@ public class Player : MonoBehaviour
     float mRemainingSheidTime;
     Vector2 mReticlePosition;
 
+    
+    public ParticleSystem minigunParticleSystem;
+
     public Vector2 ReticlePosition
     {
         get
@@ -52,6 +55,8 @@ public class Player : MonoBehaviour
             {
                 if (Input.GetButton("Player_" + mPlayerNumber + "_Fire1"))
                 {
+                    //emit the particle system (bullet casings).
+                    minigunParticleSystem.Emit(1);
                     if (!mEquippedWeapon.Shoot(GetComponent<Aiming>().CorrectedAimDirection))
                     {
                         mEquippedWeapon = null;
