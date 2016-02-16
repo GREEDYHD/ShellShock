@@ -39,7 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c97d4c18c9840f8429cae8f9878813b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mAmmoRemaining: 72
+  mAmmoRemaining: 47
   hasInfiniteAmmo: 0
   mProjectile: {fileID: 104962, guid: dea1b2a0b5b8d2c46adb881aa59fc2a9, type: 2}
 --- !u!1001 &100100000

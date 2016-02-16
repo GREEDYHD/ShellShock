@@ -2,13 +2,16 @@
 using UnityEngine.UI;
 using System.Collections;
 
-//Author: Julian Stopher
+
 public class DisplayAmmoCount : MonoBehaviour
 {
-
+	public Pistol pistol;
+	public AssaultRifle assualtRifle;
     public Shotgun shotgun;
+	public Sniper sniper;
     public MiniGun minigun;
     public RocketLauncher rocketLauncher;
+	public GrenadeLauncher grenadeLauncher;
 
     public Text ammoCount;
 
@@ -41,6 +44,22 @@ public class DisplayAmmoCount : MonoBehaviour
                 {
                     ammoCount.text = rocketLauncher.mAmmoRemaining.ToString();
                 }
+					else if (player.mEquippedWeapon == pistol)
+					{
+						ammoCount.text = pistol.mAmmoRemaining.ToString();
+					}
+						else if (player.mEquippedWeapon == assualtRifle)
+							{
+								ammoCount.text = assualtRifle.mAmmoRemaining.ToString();
+							}
+							else if (player.mEquippedWeapon == sniper)
+								{
+									ammoCount.text = sniper.mAmmoRemaining.ToString();
+								}
+								else if (player.mEquippedWeapon == grenadeLauncher)
+									{
+										ammoCount.text = grenadeLauncher.mAmmoRemaining.ToString();
+									}
     }
 
 }

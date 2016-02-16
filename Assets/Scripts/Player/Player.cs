@@ -5,7 +5,7 @@ using System.Collections;
 public class Player : MonoBehaviour
 {
     public Weapon mEquippedWeapon;
-	public Weapon[] weaponList; // 10/02/16
+	public Weapon[] weaponList;
     public int mPlayerNumber;
     public int PlayerNumber
     {
@@ -39,7 +39,6 @@ public class Player : MonoBehaviour
         mReticlePosition = mEquippedWeapon.transform.position;
         mEquippedWeapon.transform.position = transform.position;
         mEquippedWeapon.transform.parent = transform;
-        //mEquippedWeapon = weaponList [0];
     }
 
     void Update()
@@ -71,8 +70,7 @@ public class Player : MonoBehaviour
             Destroy(coll.gameObject);
         }
     }
-	//######################################################################################
-	//Youles 10/02/16
+
 	public void ChangeWeapon(int weaponNumber)
 	{
 		mEquippedWeapon = weaponList [weaponNumber];
@@ -80,5 +78,5 @@ public class Player : MonoBehaviour
 		mEquippedWeapon.transform.parent = transform;
 
 	}
-	//######################################################################################
+
 }
