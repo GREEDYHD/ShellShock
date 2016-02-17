@@ -35,9 +35,7 @@ public class PlayerActions: MonoBehaviour
 			GetComponent<Aiming>().ReticleRender();
 			ballObj.GetComponent<Ball>().BallRender();
 		}
-		//######################################################################################
-		//Youles 10/02/16
-		if(Input.GetButtonUp("Player_" + GetComponent<Player>().PlayerNumber + "_Switch"))
+			if(Input.GetButtonUp("Player_" + GetComponent<Player>().PlayerNumber + "_Switch"))
 		{
 			if (weaponNumber < playerScript.weaponList.Length) 
 			{
@@ -52,7 +50,7 @@ public class PlayerActions: MonoBehaviour
 				playerScript.ChangeWeapon(weaponNumber);
 			}
 		}
-		//#######################################################################################
+		
 	}
 
 	void PlayerRender()

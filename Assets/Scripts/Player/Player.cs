@@ -5,7 +5,7 @@ using System.Collections;
 public class Player : MonoBehaviour
 {
     public Weapon mEquippedWeapon;
-	public Weapon[] weaponList;
+    public Weapon[] weaponList;
     public int mPlayerNumber;
     public int PlayerNumber
     {
@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
     float mMaxSheildTime;
     float mRemainingSheidTime;
     Vector2 mReticlePosition;
-	public ParticleSystem minigunParticleSystem;
+    public ParticleSystem minigunParticleSystem;
     public Vector2 ReticlePosition
     {
         get
@@ -43,7 +43,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-		
         if (mEquippedWeapon)
         {
             if (GetComponent<Aiming>().AimDirection.magnitude > 0.9)
@@ -51,8 +50,8 @@ public class Player : MonoBehaviour
                 if (Input.GetButton("Player_" + mPlayerNumber + "_Fire1"))
                 {
                     //emit the bullet casing particle system
-					minigunParticleSystem.Emit(1);
-                   
+                    minigunParticleSystem.Emit(1);
+
                     if (!mEquippedWeapon.Shoot(GetComponent<Aiming>().CorrectedAimDirection))
                     {
                         mEquippedWeapon = null;
@@ -71,12 +70,10 @@ public class Player : MonoBehaviour
         }
     }
 
-	public void ChangeWeapon(int weaponNumber)
-	{
-		mEquippedWeapon = weaponList [weaponNumber];
-		mEquippedWeapon.transform.position = transform.position;
-		mEquippedWeapon.transform.parent = transform;
-
-	}
-
+    public void ChangeWeapon(int weaponNumber)
+    {
+        mEquippedWeapon = weaponList[weaponNumber];
+        mEquippedWeapon.transform.position = transform.position;
+        weaponList[weaponNumber].transform.SetParent(transform);
+    }
 }
