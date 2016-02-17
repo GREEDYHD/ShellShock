@@ -717,8 +717,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3800ba1d4402403408247b3365ec08f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mEquippedWeapon: {fileID: 1886781779}
-  weaponList: []
+  mEquippedWeapon: {fileID: 1518142153}
+  weaponList:
+  - {fileID: 1518142153}
+  - {fileID: 1886781779}
+  - {fileID: 444802006}
+  - {fileID: 1103378176}
+  - {fileID: 1998640093}
+  - {fileID: 1106708548}
+  - {fileID: 190466646}
   mPlayerNumber: 1
   slider: {fileID: 1117151108}
   minigunParticleSystem: {fileID: 1307117389}
@@ -1522,27 +1529,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22427428, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22427428, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22467270, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22467270, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447970, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447970, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11463138, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_FontData.m_Font
