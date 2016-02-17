@@ -37,6 +37,9 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+--- !u!127 &3
+LevelGameManager:
+  m_ObjectHideFlags: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -65,7 +68,6 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
-    m_ReflectionCompression: 2
   m_LightmapSnapshot: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &5
@@ -311,10 +313,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
+  m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -733,15 +735,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3800ba1d4402403408247b3365ec08f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mEquippedWeapon: {fileID: 1998640093}
-  weaponList:
-  - {fileID: 11406788, guid: fb80daa749f26694dbd949ac8cd91e23, type: 2}
-  - {fileID: 11481414, guid: cf3b36c1277b6914ca9531867d57d6e5, type: 2}
-  - {fileID: 11481560, guid: f89e011de36c1124e97bf9847d797ad1, type: 2}
-  - {fileID: 11473188, guid: dcfaa153c5433dd478fabe3e62e3b353, type: 2}
-  - {fileID: 11440672, guid: 0d300e0327b70da49abe5b0e9498a7a7, type: 2}
-  - {fileID: 11420586, guid: 003cf19f83162bf49b315e76e2a9d43e, type: 2}
-  - {fileID: 11444754, guid: 80dc342e8beab4f4b9dae0ca5c1ec431, type: 2}
+  mEquippedWeapon: {fileID: 1106708548}
+  weaponList: []
   mPlayerNumber: 1
   slider: {fileID: 1117151108}
   minigunParticleSystem: {fileID: 1307117389}
@@ -801,7 +796,6 @@ MonoBehaviour:
   mReticle: {fileID: 749276102}
 --- !u!50 &1515989188
 Rigidbody2D:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -810,11 +804,11 @@ Rigidbody2D:
   m_LinearDrag: 100
   m_AngularDrag: .0500000007
   m_GravityScale: 0
+  m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!61 &1515989189
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1177,12 +1171,10 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
-  m_StereoMirrorMode: 0
 --- !u!114 &1795214387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1335,7 +1327,7 @@ MonoBehaviour:
   m_Script: {fileID: 1997211142, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceModuleActive: 0
+  m_AllowActivationOnStandalone: 0
 --- !u!114 &2020640165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1352,8 +1344,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
-  m_RepeatDelay: .5
-  m_ForceModuleActive: 0
+  m_AllowActivationOnMobileDevice: 0
 --- !u!114 &2020640166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1605,28 +1596,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22427428, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22427428, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22467270, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22467270, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22447970, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22447970, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11463138, guid: b8af804de96124644898f0e89616d06a, type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8af804de96124644898f0e89616d06a, type: 2}
   m_IsPrefabParent: 0
