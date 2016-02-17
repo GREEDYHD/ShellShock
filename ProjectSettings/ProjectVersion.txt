@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 m_EditorVersion: 5.2.1p4
+=======
+m_EditorVersion: 5.2.1f1
+>>>>>>> parent of 99dcb0c... Added HUDPanel and Bullet Casing Particle System
 m_StandardAssetsVersion: 0
