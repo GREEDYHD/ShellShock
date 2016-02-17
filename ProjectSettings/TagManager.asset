@@ -42,17 +42,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Bullets
-    uniqueID: 1815288447
-    locked: 0
   - name: WallsBehind
     uniqueID: 2015190895
     locked: 0
-  - name: WallsInFront
-    uniqueID: 1573436195
+  - name: Bullets
+    uniqueID: 1815288447
     locked: 0
   - name: Players
     uniqueID: 3538980255
+    locked: 0
+  - name: WallsInFront
+    uniqueID: 1573436195
     locked: 0
   - name: HP BAR
     uniqueID: 44844207
