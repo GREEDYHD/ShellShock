@@ -49,7 +49,7 @@ public class TimerAndWin : MonoBehaviour {
 		
 		
 		if (GameOver == true) {
-			WinText.gameObject.SetActive(true);
+		//	WinText.gameObject.SetActive(true);
 		}
 	}
 }
