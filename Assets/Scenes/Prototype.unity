@@ -454,12 +454,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1353a536c9d8c746b42a5ac419d21c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
-  timepassed: 0
-  TimerFormat: {fileID: 1833327629}
-  startTimer: 0
-  GameOver: 0
-  WinText: {fileID: 0}
+  roundLength: 60
+  timerText: {fileID: 1833327629}
+  gamePaused: 0
 --- !u!4 &713839869
 Transform:
   m_ObjectHideFlags: 0
