@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
+  - Dynamic
   layers:
   - Default
   - TransparentFX
@@ -59,4 +60,7 @@ TagManager:
     locked: 0
   - name: Reticle
     uniqueID: 3486639111
+    locked: 0
+  - name: UI
+    uniqueID: 4017442859
     locked: 0

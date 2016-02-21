@@ -42,6 +42,7 @@ public class TimerAndWin : MonoBehaviour
             System.TimeSpan t = (System.TimeSpan.FromSeconds(timer)) - (System.TimeSpan.FromSeconds(timepassed));
             TimerFormat.text = string.Format("{0:D2}", t.Seconds);
 
+
             if (t.Seconds <= 0)
             {
                 TimerFormat.text = "00";
