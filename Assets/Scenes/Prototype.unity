@@ -1989,35 +1989,35 @@ Prefab:
       objectReference: {fileID: 1515989184}
     - target: {fileID: 22446808, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22446808, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22427428, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22427428, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22467270, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22467270, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447970, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447970, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11463138, guid: b8af804de96124644898f0e89616d06a, type: 2}
       propertyPath: m_FontData.m_Font
