@@ -6,6 +6,7 @@ public class Aiming : MonoBehaviour
     public GameObject player;
     private PlayerActions _playerActions;
     private SpriteRenderer reticleRenderer;
+    public SpriteManager spriteManager;
 
     Vector2 mDefaultPosition = new Vector2(0.0f, 0.0f);
 
@@ -52,6 +53,7 @@ public class Aiming : MonoBehaviour
     {
         Vector2 playerPosition = new Vector2(transform.position.x, transform.position.y);
         mAimDirection = new Vector2(Input.GetAxis("Player_" + GetComponent<Player>().PlayerNumber + "_RJoystickX"), Input.GetAxis("Player_" + GetComponent<Player>().PlayerNumber + "_RJoystickY")).normalized;
+        
 
         //mReticle.gameObject.SetActive(false);
         if (mAimDirection != mPreviousAimDirection && mAimDirection.magnitude > 0)
@@ -69,7 +71,8 @@ public class Aiming : MonoBehaviour
             mReticle.transform.position = mDefaultPosition + playerPosition - (mCorrectedAimDirection) * 1.5f;
             //Debug.DrawLine (playerPosition, playerPosition + mAimDirection * Range);
 
-            SpriteManager.instance.ChangeSprite(spriteNumber);
+            spriteManager.ChangeSprite(spriteNumber);
+           // SpriteManager.instance.ChangeSprite(spriteNumber);
             mPreviousAimDirection = mAimDirection;
         }
     }
