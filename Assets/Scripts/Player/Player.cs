@@ -15,7 +15,8 @@ public class Player : MonoBehaviour
         }
     }
 
-    public Slider slider;
+    public Slider HPSlider;
+    public Slider ammoSlider;
 
     int mHealth;
     int mMaxHealth;
@@ -39,6 +40,9 @@ public class Player : MonoBehaviour
         mReticlePosition = mEquippedWeapon.transform.position;
         mEquippedWeapon.transform.position = transform.position;
         mEquippedWeapon.transform.parent = transform;
+      ammoSlider.maxValue = mEquippedWeapon.mAmmoRemaining;
+        ammoSlider.value = ammoSlider.maxValue;
+
     }
 
     void Update()
@@ -49,6 +53,7 @@ public class Player : MonoBehaviour
             {   //if the fire button is pressed, fire the gun.
                 if (Input.GetButton("Player_" + mPlayerNumber + "_Fire1"))
                 {
+                    ammoSlider.value--;
                     //emit the bullet casing particle system
                     minigunParticleSystem.Emit(1);
 
@@ -65,7 +70,7 @@ public class Player : MonoBehaviour
     {
         if (coll.gameObject.tag == "Projectile")
         {
-            slider.value -= (float)coll.gameObject.GetComponent<Projectile>().Damage / 100;
+            HPSlider.value -= (float)coll.gameObject.GetComponent<Projectile>().Damage / 100;
             Destroy(coll.gameObject);
         }
     }
