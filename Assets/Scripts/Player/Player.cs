@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
 
     int mSheildDamageReduction;
 
+    public float waitTime;
     float mMaxSheildTime;
     float mRemainingSheidTime;
     Vector2 mReticlePosition;
@@ -47,6 +48,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        waitTime -= Time.deltaTime;
         if (mEquippedWeapon)
         {
             if (GetComponent<Aiming>().AimDirection.magnitude > 0.9)

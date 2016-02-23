@@ -26,10 +26,7 @@ public class tunnelScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-       
-        randTunnelLink += 1;
-        Debug.Log(randTunnelLink);
-        if (coll.name == "Player")
+        if (coll.name == "Player" && coll.gameObject.GetComponentInParent<Player>().waitTime <= 0.0f)
         {
             if (randTunnelLink != tunnelNo)
             {
@@ -52,7 +49,8 @@ public class tunnelScript : MonoBehaviour {
             }
             //Problem is that you can teleport to random tunnels but you can also teleport to the same on you just walked into
             //Have to check whether you are colliding with the one you're teleporting to
+            randTunnelLink += 1;
+            coll.gameObject.GetComponentInParent<Player>().waitTime = 0.5f;
         }
-        //coll.gameObject.GetComponentInParent<Player>().wTime = 1.5f;
     }
 }
