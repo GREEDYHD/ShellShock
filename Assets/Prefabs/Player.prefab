@@ -345,9 +345,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.12499994, y: -1.04278374}
+  m_Offset: {x: -.125, y: -.0320999995}
   serializedVersion: 2
-  m_Size: {x: .861835837, y: .226932526}
+  m_Size: {x: .861835837, y: 2.24815989}
 --- !u!114 &11404772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -571,6 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 133054}
+  spriteManager: {fileID: 0}
   mReticle: {fileID: 183054}
 --- !u!114 &11468980
 MonoBehaviour:
@@ -2119,7 +2120,19 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Offset.x
+      value: -.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Offset.y
+      value: -.0320999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Size.y
+      value: 2.24815989
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 133054}
