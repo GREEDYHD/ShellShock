@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     public Weapon mEquippedWeapon;
     public Weapon[] weaponList;
     public int mPlayerNumber;
+
+
     public int PlayerNumber
     {
         get

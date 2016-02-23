@@ -8,7 +8,7 @@ public class MovementISO : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		spriteManager = GetComponent<SpriteManager> ();
+		//spriteManager = GetComponent<SpriteManager> ();
 	}
 	
 	// Update is called once per frame
@@ -16,13 +16,16 @@ public class MovementISO : MonoBehaviour {
 	{
 		if (Input.GetKeyDown (KeyCode.Keypad1)) {
 			spriteManager.ChangeSprite (1);
+           
 		}
 		if (Input.GetKeyDown (KeyCode.Keypad2)) {
 			spriteManager.ChangeSprite (2);
-		}
+          
+        }
 		if (Input.GetKeyDown (KeyCode.Keypad3)) {
 			spriteManager.ChangeSprite (3);
-		}
+           
+        }
 		if (Input.GetKeyDown (KeyCode.Keypad4)) {
 			spriteManager.ChangeSprite (4);
 		}
