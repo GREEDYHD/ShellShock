@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
     float mRemainingSheidTime;
     Vector2 mReticlePosition;
     public ParticleSystem minigunParticleSystem;
+    public GameObject playerHUD;
     public Vector2 ReticlePosition
     {
         get
@@ -50,6 +51,14 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetButton("Player_"+ mPlayerNumber + "_Back"))
+        {
+            playerHUD.SetActive(true);
+        }
+        else
+        {
+            playerHUD.SetActive(false);
+        }
         waitTime -= Time.deltaTime;
         if (mEquippedWeapon)
         {
