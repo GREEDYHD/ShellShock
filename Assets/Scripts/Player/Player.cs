@@ -5,10 +5,9 @@ using System.Collections;
 public class Player : MonoBehaviour
 {
     public Weapon mEquippedWeapon;
-
+    public Weapon[] weaponList;
     public int mPlayerNumber;
 
-	public float wTime; //Wait time between being able to use holes or otherwise it looks glitchy
 
     public int PlayerNumber
     {
@@ -18,20 +17,20 @@ public class Player : MonoBehaviour
         }
     }
 
-    public Slider slider;
+    public Slider HPSlider;
+    public Slider ammoSlider;
 
     int mHealth;
     int mMaxHealth;
 
     int mSheildDamageReduction;
 
+    public float waitTime;
     float mMaxSheildTime;
     float mRemainingSheidTime;
     Vector2 mReticlePosition;
-
-    
     public ParticleSystem minigunParticleSystem;
-
+    public GameObject playerHUD;
     public Vector2 ReticlePosition
     {
         get
@@ -42,21 +41,35 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        mReticlePosition = mEquippedWeapon.transform.position;
         mEquippedWeapon.transform.position = transform.position;
         mEquippedWeapon.transform.parent = transform;
-        mReticlePosition = mEquippedWeapon.transform.position;
+      ammoSlider.maxValue = mEquippedWeapon.mAmmoRemaining;
+        ammoSlider.value = ammoSlider.maxValue;
+
     }
 
     void Update()
     {
+        if(Input.GetButton("Player_"+ mPlayerNumber + "_Back"))
+        {
+            playerHUD.SetActive(true);
+        }
+        else
+        {
+            playerHUD.SetActive(false);
+        }
+        waitTime -= Time.deltaTime;
         if (mEquippedWeapon)
         {
             if (GetComponent<Aiming>().AimDirection.magnitude > 0.9)
-            {
+            {   //if the fire button is pressed, fire the gun.
                 if (Input.GetButton("Player_" + mPlayerNumber + "_Fire1"))
                 {
-                    //emit the particle system (bullet casings).
+                    ammoSlider.value--;
+                    //emit the bullet casing particle system
                     minigunParticleSystem.Emit(1);
+
                     if (!mEquippedWeapon.Shoot(GetComponent<Aiming>().CorrectedAimDirection))
                     {
                         mEquippedWeapon = null;
@@ -64,16 +77,21 @@ public class Player : MonoBehaviour
                 }
             }
         }
-
-		wTime -= Time.deltaTime;
     }
 
     void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.gameObject.tag == "Projectile")
         {
-            slider.value -= (float)coll.gameObject.GetComponent<Projectile>().Damage / 1000;
+            HPSlider.value -= (float)coll.gameObject.GetComponent<Projectile>().Damage / 100;
             Destroy(coll.gameObject);
         }
+    }
+
+    public void ChangeWeapon(int weaponNumber)
+    {
+        mEquippedWeapon = weaponList[weaponNumber];
+        mEquippedWeapon.transform.position = transform.position;
+        weaponList[weaponNumber].transform.SetParent(transform);
     }
 }
