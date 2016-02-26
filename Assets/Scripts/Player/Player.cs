@@ -90,6 +90,10 @@ public class Player : MonoBehaviour
 
     public void ChangeWeapon(int weaponNumber)
     {
+
+        Instantiate(mEquippedWeapon, new Vector3(transform.position.x, transform.position.y - 2.0f, transform.position.z), Quaternion.identity);
+        //create a clone of the previous weapon just under the player
+        //Destroy(InstantiatedWeapon, 3.0f);
         mEquippedWeapon = weaponList[weaponNumber];
         mEquippedWeapon.transform.position = transform.position;
         weaponList[weaponNumber].transform.SetParent(transform);
