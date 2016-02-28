@@ -44,9 +44,11 @@ public class Player : MonoBehaviour
         mReticlePosition = mEquippedWeapon.transform.position;
         mEquippedWeapon.transform.position = transform.position;
         mEquippedWeapon.transform.parent = transform;
-        ammoSlider.maxValue = mEquippedWeapon.mAmmoRemaining;
-        ammoSlider.value = ammoSlider.maxValue;
+        ammoSlider.maxValue = 1;
+        ammoSlider.value = 1;
 
+        mMaxHealth = 100;
+        mHealth = mMaxHealth;
     }
 
     void Update()
@@ -66,7 +68,10 @@ public class Player : MonoBehaviour
             {   //if the fire button is pressed, fire the gun.
                 if (Input.GetButton("Player_" + mPlayerNumber + "_Fire1"))
                 {
-                    ammoSlider.value--;
+                    if (mEquippedWeapon.RemainingAmmo >= 0)
+                    {
+                        ammoSlider.value = (float)mEquippedWeapon.RemainingAmmo / (float)mEquippedWeapon.MaximumAmmo;
+                    }
                     //emit the bullet casing particle system
                     minigunParticleSystem.Emit(1);
 
@@ -83,7 +88,20 @@ public class Player : MonoBehaviour
     {
         if (coll.gameObject.tag == "Projectile")
         {
-            HPSlider.value -= (float)coll.gameObject.GetComponent<Projectile>().Damage / 100;
+            mHealth -= coll.gameObject.GetComponent<Projectile>().Damage;
+            HPSlider.value = (float)mHealth / (float)mMaxHealth;
+            if (mHealth <= mMaxHealth / 2)
+            {
+                if (mHealth <= mMaxHealth / 4)
+                {
+                    HPSlider.transform.GetChild(1).transform.GetChild(0).GetComponent<Image>().color = Color.red;//TODO:Make this not super hacky (possibly with a script on the slider that holds references)
+                }
+                else
+                {
+                    HPSlider.transform.GetChild(1).transform.GetChild(0).GetComponent<Image>().color = Color.yellow;//TODO:Make this not super hacky (possibly with a script on the slider that holds references)
+                }
+            }
+
             Debug.Log("Player_" + mPlayerNumber + " took damage from Player_" + coll.gameObject.GetComponent<Projectile>().OwnerID + "'s projectile");
             Destroy(coll.gameObject);
         }

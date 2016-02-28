@@ -12,8 +12,10 @@ public class DisplayAmmoCount : MonoBehaviour
 
     void Update()
     {
-		ammoCount.text = player.mEquippedWeapon.mAmmoRemaining.ToString ();
+        if (player.mEquippedWeapon)
+        {
+            ammoCount.text = player.mEquippedWeapon.RemainingAmmo.ToString();
+        }
     }
-
 }
 
