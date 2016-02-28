@@ -34,7 +34,7 @@ public abstract class Weapon : MonoBehaviour
 
     public GameObject mProjectile;
 
-    public bool Shoot(Vector2 dir)
+    public bool Shoot(Vector2 dir, int id)
     {
         if (mAmmoRemaining > 0)
         {
@@ -42,18 +42,20 @@ public abstract class Weapon : MonoBehaviour
             if (mCurrentFireTime > 1 / mFireRate)
             {
                 GameObject firedProjectile = (GameObject)Instantiate(mProjectile, new Vector2(transform.position.x, transform.position.y) + dir.normalized * 1.8f, Quaternion.identity);
-                firedProjectile.GetComponent<Projectile>().Fire((dir * mMuzzleVelocity) + spr, mDamage);
+                firedProjectile.GetComponent<Projectile>().Fire((dir * mMuzzleVelocity) + spr, mDamage, id);
                 if (!hasInfiniteAmmo)
                 {
                     mAmmoRemaining--;
                 }
                 mCurrentFireTime = 0;
                 return true;
-            } else {
+            }
+            else {
                 mCurrentFireTime += Time.deltaTime;
                 return true;
             }
-        } else {
+        }
+        else {
             return false;
         }
     }

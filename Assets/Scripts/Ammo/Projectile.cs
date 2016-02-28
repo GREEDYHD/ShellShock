@@ -8,6 +8,8 @@ public class Projectile : MonoBehaviour
 
     protected Vector2 mVelocity;
 
+    private int mOwnerID;
+
     protected float skinWidth = 0.1f;
     protected float minimumExtent;
     protected float partialExtent;
@@ -29,6 +31,18 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    public int OwnerID
+    {
+        get
+        {
+            return mOwnerID;
+        }
+
+        set
+        {
+            mOwnerID = value;
+        }
+    }
 
     void Start()
     {
@@ -36,6 +50,7 @@ public class Projectile : MonoBehaviour
         partialExtent = minimumExtent * (1.0f - skinWidth);
         sqrMinimumExtent = minimumExtent * minimumExtent;
     }
+
     void Update()
     {
         if (currentBounces > bouncesAllowed)
@@ -47,9 +62,10 @@ public class Projectile : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
-    public virtual void Fire(Vector2 vel, int damage)
+    public virtual void Fire(Vector2 vel, int damage, int id)
     {
         mVelocity = vel;
+        mOwnerID = id;
         mRigidBody = gameObject.GetComponent<Rigidbody2D>();
         mRigidBody.velocity = mVelocity;
         mDamage = damage;

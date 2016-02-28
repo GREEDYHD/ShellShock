@@ -44,14 +44,14 @@ public class Player : MonoBehaviour
         mReticlePosition = mEquippedWeapon.transform.position;
         mEquippedWeapon.transform.position = transform.position;
         mEquippedWeapon.transform.parent = transform;
-      ammoSlider.maxValue = mEquippedWeapon.mAmmoRemaining;
+        ammoSlider.maxValue = mEquippedWeapon.mAmmoRemaining;
         ammoSlider.value = ammoSlider.maxValue;
 
     }
 
     void Update()
     {
-        if(Input.GetButton("Player_"+ mPlayerNumber + "_Back"))
+        if (Input.GetButton("Player_" + mPlayerNumber + "_Back"))
         {
             playerHUD.SetActive(true);
         }
@@ -70,7 +70,7 @@ public class Player : MonoBehaviour
                     //emit the bullet casing particle system
                     minigunParticleSystem.Emit(1);
 
-                    if (!mEquippedWeapon.Shoot(GetComponent<Aiming>().CorrectedAimDirection))
+                    if (!mEquippedWeapon.Shoot(GetComponent<Aiming>().CorrectedAimDirection, mPlayerNumber))
                     {
                         mEquippedWeapon = null;
                     }
@@ -84,6 +84,7 @@ public class Player : MonoBehaviour
         if (coll.gameObject.tag == "Projectile")
         {
             HPSlider.value -= (float)coll.gameObject.GetComponent<Projectile>().Damage / 100;
+            Debug.Log("Player_" + mPlayerNumber + " took damage from Player_" + coll.gameObject.GetComponent<Projectile>().OwnerID + "'s projectile");
             Destroy(coll.gameObject);
         }
     }
