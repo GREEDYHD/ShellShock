@@ -5,38 +5,31 @@ using UnityEngine.UI;
 public class TimerAndWin : MonoBehaviour
 {
     public float roundLength = 60f;
-	public Text timerText;
-	public bool gamePaused;
- 
-
-
-    // Use this for initialization
-    void Start()
-    {
-
-       
-
-    }
+    public Text timerText;
+    public bool gamePaused;
 
     // Update is called once per frame
     void Update()
     {
-		if (gamePaused == false)
-		{
-			roundLength -= Time.deltaTime;
-		}
-		timerText.text = roundLength.ToString("F2") ;
+        if (gamePaused == false)
+        {
+            roundLength -= Time.deltaTime;
+        }
 
-		if (roundLength <= 0) 
-		{
-			EndGame();
-		}
-   
+        string[] timeArr;
+        timeArr = roundLength.ToString("F2").Split('.');
+
+        timerText.text = timeArr[0] + ":" + timeArr[1];
+
+        if (roundLength <= 0)
+        {
+            EndGame();
+        }
+
     }
 
-	void EndGame()
-	{
-		//Call appropriate function ();
-	}
+    void EndGame()
+    {
+        //Call appropriate function ();
+    }
 }
-
