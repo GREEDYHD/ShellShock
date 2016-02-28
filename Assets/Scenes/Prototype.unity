@@ -8804,19 +8804,19 @@ Prefab:
       objectReference: {fileID: 1998640093}
     - target: {fileID: 22431700, guid: 37b47e7042c5d694dbcf150debde834f, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22431700, guid: 37b47e7042c5d694dbcf150debde834f, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22426558, guid: 37b47e7042c5d694dbcf150debde834f, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22426558, guid: 37b47e7042c5d694dbcf150debde834f, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 133054, guid: 37b47e7042c5d694dbcf150debde834f, type: 2}
       propertyPath: m_Name
