@@ -26,7 +26,7 @@ public class tunnelScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.name == "Player" && coll.gameObject.GetComponentInParent<Player>().waitTime <= 0.0f)
+        if (coll.GetComponent<Player>() && coll.gameObject.GetComponentInParent<Player>().waitTime <= 0.0f)
         {
             if (randTunnelLink != tunnelNo)
             {
