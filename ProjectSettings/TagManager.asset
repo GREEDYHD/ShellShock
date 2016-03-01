@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Projectile
   - Dynamic
+  - RESPAWNPOINT
   layers:
   - Default
   - TransparentFX

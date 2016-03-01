@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     Vector2 mReticlePosition;
     public ParticleSystem minigunParticleSystem;
     public GameObject playerHUD;
+
     public Vector2 ReticlePosition
     {
         get
@@ -39,6 +40,17 @@ public class Player : MonoBehaviour
         }
     }
 
+    public Pistol playerPistol;
+    public GameObject[] playerSpawnPoints;
+    public  bool isPlayerDead = false;
+    public float timeToRespawn = 3f;
+    public float timeSpentDead = 0f;
+   
+
+    void Awake()
+    {
+        playerSpawnPoints = GameObject.FindGameObjectsWithTag("RESPAWNPOINT");
+    }
     void Start()
     {
         mReticlePosition = mEquippedWeapon.transform.position;
@@ -53,6 +65,22 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(timeSpentDead);
+        if (isPlayerDead)
+        {
+            Debug.Log("TRUE");
+        }
+        if (isPlayerDead == true)  {
+            Debug.Log("AAAAA");
+            timeSpentDead += Time.deltaTime;
+            if (timeSpentDead >= timeToRespawn)
+            {
+                EnableAndShowPlayer();
+                 isPlayerDead = false;
+                timeSpentDead = 0f;
+            }
+        }
+       
         //if L3 is held, the HUD will appear
         if (Input.GetButton("Player_" + mPlayerNumber + "_Back"))
         {
@@ -68,7 +96,7 @@ public class Player : MonoBehaviour
         {
             if (GetComponent<Aiming>().AimDirection.magnitude > 0.9)
             {   //if the fire button is pressed, fire the gun.
-                if (Input.GetButton("Player_" + mPlayerNumber + "_Fire1"))
+                if (Input.GetButton("Player_" + mPlayerNumber + "_Fire1") && !isPlayerDead)
                 {
                     if (mEquippedWeapon.RemainingAmmo >= 0)
                     {
@@ -105,8 +133,14 @@ public class Player : MonoBehaviour
             }
             //if the player's health is 0, the player game object will be disabled.
             if(HPSlider.value == 0) {
-                gameObject.SetActive(false);
+                //  gameObject.SetActive(false);
+                DisableAndHidePlayer();
                 Debug.Log("Player_" + mPlayerNumber + "  has died");
+
+                ResetPlayerProperties();
+                SetPlayerSpawnPosition();
+                StartRespawnTimer();
+               
 
             }
 
@@ -114,6 +148,46 @@ public class Player : MonoBehaviour
             Destroy(coll.gameObject);
         }
     }
+
+    public void ResetPlayerProperties()
+    {
+        //reset player's health
+        mHealth = mMaxHealth;
+        //equip the player with a fully loaded pistol.
+        mEquippedWeapon = playerPistol;
+        mEquippedWeapon.RemainingAmmo = mEquippedWeapon.MaximumAmmo;
+    }
+    public void SetPlayerSpawnPosition()
+    {
+        //sets the player's position to a random spawn point.
+        gameObject.transform.position = playerSpawnPoints[Random.Range(0, playerSpawnPoints.Length)].transform.position;
+    }
+    public void StartRespawnTimer()
+    {
+        isPlayerDead = true;
+    }
+    public void DisableAndHidePlayer()
+    {
+        gameObject.GetComponent<Movement>().enabled = false;
+        gameObject.GetComponent<MovementISO>().enabled = false;
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<Aiming>().enabled = false;
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        gameObject.GetComponent<PlayerActions>().enabled = false;
+        gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
+       
+    }
+    public void EnableAndShowPlayer()
+    {
+        gameObject.GetComponent<Movement>().enabled = true;
+        gameObject.GetComponent<MovementISO>().enabled = true;
+        gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        gameObject.GetComponent<Aiming>().enabled = true;
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        gameObject.GetComponent<PlayerActions>().enabled = true;
+        gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+    }
+
 
     public void ChangeWeapon(int weaponNumber)
     {
