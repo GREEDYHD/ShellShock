@@ -220,6 +220,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &176390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 465712}
+  - 114: {fileID: 11416036}
+  m_Layer: 0
+  m_Name: StatTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &176408
 GameObject:
   m_ObjectHideFlags: 1
@@ -285,6 +301,7 @@ Transform:
   - {fileID: 423976}
   - {fileID: 22403484}
   - {fileID: 442998}
+  - {fileID: 465712}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &423976
@@ -323,6 +340,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 415802}
   m_RootOrder: 4
+--- !u!4 &465712
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176390}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .382297277, y: -.199220359, z: .00820271578}
+  m_LocalScale: {x: 1.00091147, y: 1.00091147, z: 1.00091147}
+  m_Children: []
+  m_Father: {fileID: 415802}
+  m_RootOrder: 5
 --- !u!4 &484988
 Transform:
   m_ObjectHideFlags: 1
@@ -473,6 +502,22 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11416036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56528e23e2f115447855f6a2e52937f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p: {fileID: 0}
+  acoladeManager: {fileID: 0}
+  elusiveScore: 0
+  timeSatStill: 0
+  amountOfBullets: 0
 --- !u!114 &11423686
 MonoBehaviour:
   m_ObjectHideFlags: 1
