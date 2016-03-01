@@ -683,7 +683,7 @@ Transform:
   m_LocalScale: {x: .115264796, y: .115264796, z: .115264796}
   m_Children: []
   m_Father: {fileID: 1456487450}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!114 &100469318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1332,7 +1332,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1456487450}
-  m_RootOrder: 2
+  m_RootOrder: 0
 --- !u!212 &282481003
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2018,7 +2018,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 1456487450}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!199 &467455900
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
@@ -7466,9 +7466,9 @@ Transform:
   m_LocalPosition: {x: 471.080963, y: -15, z: 11988.3662}
   m_LocalScale: {x: 36.0167351, y: 36.0167351, z: 36.0167351}
   m_Children:
+  - {fileID: 282481002}
   - {fileID: 467455899}
   - {fileID: 100469317}
-  - {fileID: 282481002}
   - {fileID: 389116437}
   - {fileID: 1720242252}
   - {fileID: 232170164}
@@ -9320,6 +9320,14 @@ Prefab:
       propertyPath: playerPistol
       value: 
       objectReference: {fileID: 1597409232}
+    - target: {fileID: 445210, guid: 37b47e7042c5d694dbcf150debde834f, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 495372, guid: 37b47e7042c5d694dbcf150debde834f, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37b47e7042c5d694dbcf150debde834f, type: 2}
   m_IsPrefabParent: 0

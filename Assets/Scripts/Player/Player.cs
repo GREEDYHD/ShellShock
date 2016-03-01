@@ -174,8 +174,9 @@ public class Player : MonoBehaviour
         gameObject.GetComponent<Aiming>().enabled = false;
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
         gameObject.GetComponent<PlayerActions>().enabled = false;
-        gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
-       
+        //disabling Reticle Game object
+        gameObject.transform.GetChild(0).gameObject.SetActive(false);
+
     }
     public void EnableAndShowPlayer()
     {
@@ -185,7 +186,8 @@ public class Player : MonoBehaviour
         gameObject.GetComponent<Aiming>().enabled = true;
         gameObject.GetComponent<BoxCollider2D>().enabled = true;
         gameObject.GetComponent<PlayerActions>().enabled = true;
-        gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
+        //enabling Reticle Game object
+        gameObject.transform.GetChild(0).gameObject.SetActive(true);
     }
 
 
