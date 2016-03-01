@@ -153,9 +153,12 @@ public class Player : MonoBehaviour
     {
         //reset player's health
         mHealth = mMaxHealth;
+        HPSlider.value = 1;
+        ammoSlider.value = 1;
         //equip the player with a fully loaded pistol.
         mEquippedWeapon = playerPistol;
         mEquippedWeapon.RemainingAmmo = mEquippedWeapon.MaximumAmmo;
+      
     }
     public void SetPlayerSpawnPosition()
     {
