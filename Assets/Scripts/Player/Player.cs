@@ -53,6 +53,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        //if L3 is held, the HUD will appear
         if (Input.GetButton("Player_" + mPlayerNumber + "_Back"))
         {
             playerHUD.SetActive(true);
@@ -61,6 +62,7 @@ public class Player : MonoBehaviour
         {
             playerHUD.SetActive(false);
         }
+
         waitTime -= Time.deltaTime;
         if (mEquippedWeapon)
         {
@@ -100,6 +102,12 @@ public class Player : MonoBehaviour
                 {
                     HPSlider.transform.GetChild(1).transform.GetChild(0).GetComponent<Image>().color = Color.yellow;//TODO:Make this not super hacky (possibly with a script on the slider that holds references)
                 }
+            }
+            //if the player's health is 0, the player game object will be disabled.
+            if(HPSlider.value == 0) {
+                gameObject.SetActive(false);
+                Debug.Log("Player_" + mPlayerNumber + "  has died");
+
             }
 
             Debug.Log("Player_" + mPlayerNumber + " took damage from Player_" + coll.gameObject.GetComponent<Projectile>().OwnerID + "'s projectile");

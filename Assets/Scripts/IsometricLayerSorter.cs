@@ -12,13 +12,17 @@ public class IsometricLayerSorter : MonoBehaviour
     }
     void Update()
     {
-        if (GameObject.FindGameObjectWithTag("Player").transform.position.y > transform.position.y)
+        //Null check to avoid null reference exception errors
+        if (GameObject.FindGameObjectWithTag("Player") != null)
         {
-            GetComponent<SpriteRenderer>().sortingLayerName = "WallsInFront";
-        }
-        else
-        {
-            GetComponent<SpriteRenderer>().sortingLayerName = "WallsBehind";
-        }
+            if (GameObject.FindGameObjectWithTag("Player").transform.position.y > transform.position.y)
+            {
+                GetComponent<SpriteRenderer>().sortingLayerName = "WallsInFront";
+            }
+            else
+            {
+                GetComponent<SpriteRenderer>().sortingLayerName = "WallsBehind";
+            }
+       }
     }
 }
