@@ -32,6 +32,8 @@ public class Player : MonoBehaviour
     public ParticleSystem minigunParticleSystem;
     public GameObject playerHUD;
 
+    public int playerScore;
+
     public Vector2 ReticlePosition
     {
         get
@@ -45,6 +47,8 @@ public class Player : MonoBehaviour
     public  bool isPlayerDead = false;
     public float timeToRespawn = 3f;
     public float timeSpentDead = 0f;
+    public int killingBulletID;
+    public Text playerScoreText;
    
 
     void Awake()
@@ -61,17 +65,16 @@ public class Player : MonoBehaviour
 
         mMaxHealth = 100;
         mHealth = mMaxHealth;
+        playerScore = 0;
+        playerScoreText.text = playerScore.ToString();
     }
 
     void Update()
     {
-        Debug.Log(timeSpentDead);
-        if (isPlayerDead)
-        {
-            Debug.Log("TRUE");
-        }
+        playerScoreText.text = playerScore.ToString();
+
+
         if (isPlayerDead == true)  {
-            Debug.Log("AAAAA");
             timeSpentDead += Time.deltaTime;
             if (timeSpentDead >= timeToRespawn)
             {
@@ -136,16 +139,30 @@ public class Player : MonoBehaviour
                 //  gameObject.SetActive(false);
                 DisableAndHidePlayer();
                 Debug.Log("Player_" + mPlayerNumber + "  has died");
-
+                killingBulletID = coll.gameObject.GetComponent<Projectile>().OwnerID;
+                IncreaseKillersScore();
                 ResetPlayerProperties();
                 SetPlayerSpawnPosition();
                 StartRespawnTimer();
                
 
             }
-
+            
             Debug.Log("Player_" + mPlayerNumber + " took damage from Player_" + coll.gameObject.GetComponent<Projectile>().OwnerID + "'s projectile");
             Destroy(coll.gameObject);
+        }
+    }
+
+    public void IncreaseKillersScore()
+    {
+        Player[] players = FindObjectsOfType(typeof(Player)) as Player[];
+        foreach(Player player in players)
+        {
+            if(player.mPlayerNumber == killingBulletID)
+            {
+                player.playerScore++;
+                
+            }
         }
     }
 
