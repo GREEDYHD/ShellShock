@@ -1,28 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[ExecuteInEditMode]
-public class IsometricLayerSorter : MonoBehaviour
+namespace ShellShock
 {
-    SpriteRenderer mSpriteRenderer;
-    void Start()
+    [ExecuteInEditMode]
+    public class IsometricLayerSorter : MonoBehaviour
     {
-        mSpriteRenderer = GetComponent<SpriteRenderer>();
-        mSpriteRenderer.sortingOrder = (int)-transform.position.y;
-    }
-    void Update()
-    {
-        //Null check to avoid null reference exception errors
-        if (GameObject.FindGameObjectWithTag("Player") != null)
+        SpriteRenderer mSpriteRenderer;
+        void Start()
         {
-            if (GameObject.FindGameObjectWithTag("Player").transform.position.y > transform.position.y)
+            mSpriteRenderer = GetComponent<SpriteRenderer>();
+            mSpriteRenderer.sortingOrder = (int)-transform.position.y;
+        }
+        void Update()
+        {
+            //Null check to avoid null reference exception errors
+            if (GameObject.FindGameObjectWithTag("Player") != null)
             {
-                GetComponent<SpriteRenderer>().sortingLayerName = "WallsInFront";
+                if (GameObject.FindGameObjectWithTag("Player").transform.position.y > transform.position.y)
+                {
+                    GetComponent<SpriteRenderer>().sortingLayerName = "WallsInFront";
+                }
+                else
+                {
+                    GetComponent<SpriteRenderer>().sortingLayerName = "WallsBehind";
+                }
             }
-            else
-            {
-                GetComponent<SpriteRenderer>().sortingLayerName = "WallsBehind";
-            }
-       }
+        }
     }
 }

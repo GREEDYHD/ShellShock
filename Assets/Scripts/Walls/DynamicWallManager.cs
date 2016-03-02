@@ -1,39 +1,43 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DynamicWallManager : MonoBehaviour {
+namespace ShellShock
+{
+    public class DynamicWallManager : MonoBehaviour
+    {
 
-	public GameObject[] DynamicWallsList;
-	public DynamicWallScript wallScript;
+        public GameObject[] DynamicWallsList;
+        public DynamicWallScript wallScript;
 
-	// Use this for initialization
-	void Start () 
-	{
-		DynamicWallsList = GameObject.FindGameObjectsWithTag("Dynamic");
-		wallScript = GetComponent<DynamicWallScript> ();
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-		
-	}
+        // Use this for initialization
+        void Start()
+        {
+            DynamicWallsList = GameObject.FindGameObjectsWithTag("Dynamic");
+            wallScript = GetComponent<ShellShock.DynamicWallScript>();
+        }
 
-	public void RaiseAllWalls()
-	{
+        // Update is called once per frame
+        void Update()
+        {
 
-	}
+        }
 
-	public void DropAllWalls()
-	{
-		for (int i = 0; i < DynamicWallsList.Length; i++) 
-		{
+        public void RaiseAllWalls()
+        {
 
-		}
-	}
+        }
 
-	public void RandomWallDrop()
-	{
+        public void DropAllWalls()
+        {
+            for (int i = 0; i < DynamicWallsList.Length; i++)
+            {
 
-	}
+            }
+        }
+
+        public void RandomWallDrop()
+        {
+
+        }
+    }
 }

@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
-
-public class Crate : MonoBehaviour
+namespace ShellShock
 {
-    void OnTriggerEnter2D(Collider2D coll)
+    public class Crate : MonoBehaviour
     {
-        if (coll.gameObject.GetComponent<Player>())
+        void OnTriggerEnter2D(Collider2D coll)
         {
-            coll.gameObject.GetComponent<Player>().ChangeWeapon(Random.Range(0, 7));
-            //Destroy(gameObject.transform.parent.transform.parent.gameObject);
+            if (coll.gameObject.GetComponent<ShellShock.Player>())
+            {
+                coll.gameObject.GetComponent<ShellShock.Player>().ChangeWeapon(Random.Range(0, 7));
+                //Destroy(gameObject.transform.parent.transform.parent.gameObject);
+            }
         }
     }
 }

@@ -1,38 +1,40 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-
-public class TimerAndWin : MonoBehaviour
+namespace ShellShock
 {
-    public float roundLength = 60f;
-    bool isGameRunning = true;
-
-    public Text timerText;
-    public bool isGamePaused;
-
-    // Update is called once per frame
-    void Update()
+    public class TimerAndWin : MonoBehaviour
     {
-        if (!isGamePaused && isGameRunning)
+        public float roundLength = 60f;
+        bool isGameRunning = true;
+
+        public Text timerText;
+        public bool isGamePaused;
+
+        // Update is called once per frame
+        void Update()
         {
-            roundLength -= Time.deltaTime;
+            if (!isGamePaused && isGameRunning)
+            {
+                roundLength -= Time.deltaTime;
 
-            string[] timeArr;
-            timeArr = roundLength.ToString("F2").Split('.');
+                string[] timeArr;
+                timeArr = roundLength.ToString("F2").Split('.');
 
-            timerText.text = int.Parse(timeArr[0]) < 10 ? 0 + timeArr[0] + ":" + timeArr[1] : timeArr[0] + ":" + timeArr[1];
+                timerText.text = int.Parse(timeArr[0]) < 10 ? 0 + timeArr[0] + ":" + timeArr[1] : timeArr[0] + ":" + timeArr[1];
+            }
+
+            if (roundLength <= 0 && isGameRunning)
+            {
+                EndGame();
+            }
         }
 
-        if (roundLength <= 0 && isGameRunning)
+        void EndGame()
         {
-            EndGame();
+            isGameRunning = false;
+            timerText.text = "00:00";
+            Application.Quit();
         }
-    }
-
-    void EndGame()
-    {
-        isGameRunning = false;
-        timerText.text = "00:00";
-        Application.Quit();
     }
 }

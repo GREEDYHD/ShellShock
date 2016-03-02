@@ -17,7 +17,7 @@ namespace ShellShock
 	
 	    float distance;
 	
-	    float effect;
+	   float effect = 0f;
 	
 	    void Awake()
 	    {
@@ -40,7 +40,7 @@ namespace ShellShock
 	
 	        foreach (Collider2D col in PlayersAffected)
 	        {
-	           Player playerAffected = col.GetComponent<Player>();
+	           Player playerAffected = col.GetComponent<ShellShock.Player>();
 	
 	            if (playerAffected != null) //if there is at least one player to affect apply damage
 	            {
@@ -73,7 +73,7 @@ namespace ShellShock
 		//{
 	 //       Debug.Log("adsd");
 		//	mVelocity = vel;
-		//	mRigidBody = gameObject.GetComponent<Rigidbody2D>();
+		//	mRigidBody = gameObject.GetComponent<ShellShock.Rigidbody2D>();
 		//	mRigidBody.velocity = mVelocity;
 		//	mDamage = damage;
 		//	Vector3 dir = new Vector2(transform.position.x, transform.position.y) - vel;

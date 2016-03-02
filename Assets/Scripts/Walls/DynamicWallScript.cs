@@ -1,57 +1,60 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DynamicWallScript : MonoBehaviour
+namespace ShellShock
 {
-
-    public DynamicWallManager wallManager;
-    private Animator wallAnimator;
-    public float repeatTime = 5f;
-    //public Animation wallAnim;
-
-    // Use this for initialization
-    void Start()
+    public class DynamicWallScript : MonoBehaviour
     {
-        wallAnimator = GetComponent<Animator>();
-        //wallAnim = GetComponent<Animation> ();
-        wallAnimator.SetBool("isDown", false);
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        repeatTime -= Time.deltaTime;
-        if (repeatTime <= 0.0f)
+        public DynamicWallManager wallManager;
+        private Animator wallAnimator;
+        public float repeatTime = 5f;
+        //public Animation wallAnim;
+
+        // Use this for initialization
+        void Start()
         {
-            WallChange();
-        }
-    }
-
-    void WallChange()
-    {
-        //Debug.Log("Wall Change");
-        if (wallAnimator.GetBool("isDown") == true) //Walls are down
-        {
-            WallsUp();
-            //Debug.Log("Wall Up");
+            wallAnimator = GetComponent<Animator>();
+            //wallAnim = GetComponent<ShellShock.Animation> ();
+            wallAnimator.SetBool("isDown", false);
         }
 
-        else if (wallAnimator.GetBool("isDown") == false)
+        // Update is called once per frame
+        void Update()
         {
-            WallsDown();
-            //Debug.Log("Wall Down");
+            repeatTime -= Time.deltaTime;
+            if (repeatTime <= 0.0f)
+            {
+                WallChange();
+            }
         }
 
-        repeatTime = 5f;
-    }
+        void WallChange()
+        {
+            //Debug.Log("Wall Change");
+            if (wallAnimator.GetBool("isDown") == true) //Walls are down
+            {
+                WallsUp();
+                //Debug.Log("Wall Up");
+            }
 
-    void WallsDown()
-    {
-        wallAnimator.SetBool("isDown", true); //Walls go down
-    }
+            else if (wallAnimator.GetBool("isDown") == false)
+            {
+                WallsDown();
+                //Debug.Log("Wall Down");
+            }
 
-    void WallsUp()
-    {
-        wallAnimator.SetBool("isDown", false); //Walls go up
+            repeatTime = 5f;
+        }
+
+        void WallsDown()
+        {
+            wallAnimator.SetBool("isDown", true); //Walls go down
+        }
+
+        void WallsUp()
+        {
+            wallAnimator.SetBool("isDown", false); //Walls go up
+        }
     }
 }
