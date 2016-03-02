@@ -85,14 +85,14 @@ public class Player : MonoBehaviour
         }
        
         //if L3 is held, the HUD will appear
-        if (Input.GetButton("Player_" + mPlayerNumber + "_Back"))
-        {
-            playerHUD.SetActive(true);
-        }
-        else
-        {
-            playerHUD.SetActive(false);
-        }
+        //if (Input.GetButton("Player_" + mPlayerNumber + "_Back"))
+        //{
+        //    playerHUD.SetActive(true);
+        //}
+        //else
+        //{
+        //    playerHUD.SetActive(false);
+        //}
 
         waitTime -= Time.deltaTime;
         if (mEquippedWeapon)
