@@ -49,6 +49,7 @@ public class Player : MonoBehaviour
     public float timeSpentDead = 0f;
     public int killingBulletID;
     public Text playerScoreText;
+    bool hasPlayerSuicided = false;
    
 
     void Awake()
@@ -158,10 +159,13 @@ public class Player : MonoBehaviour
         Player[] players = FindObjectsOfType(typeof(Player)) as Player[];
         foreach(Player player in players)
         {
-            if(player.mPlayerNumber == killingBulletID)
+            if(player.mPlayerNumber == killingBulletID && killingBulletID != mPlayerNumber)
             {
-                player.playerScore++;
-                
+                player.playerScore++;   
+            }
+            if(player.mPlayerNumber == killingBulletID && killingBulletID == mPlayerNumber)
+            {
+                playerScore--;
             }
         }
     }
